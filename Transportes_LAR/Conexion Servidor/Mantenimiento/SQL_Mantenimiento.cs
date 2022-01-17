@@ -75,33 +75,14 @@ namespace Transportes_LAR.Conexion_Servidor.Mantenimiento
 					base.getAbrirConexion(sentencia);
 					base.comando.ExecuteNonQuery();
 					base.conexion.Close();
-					
-					/// <summary>
-					/// 
-					/// a
-					/// sdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-					/// asdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-					/// asdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-					/// asdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-					/// asdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-					/// asdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-					/// asdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-					/// asdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-					/// asdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-					/// asdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-					/// asdasdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-					/// </summary>
-					/// <param name="Entrada"></param>
-					/// <param name="FechaRegistro"></param>
-					/// <param name="Usuario"></param>
 				}
 				
 				public void InsertarHistorialEntrada(Int32 Entrada, String FechaRegistro, String Usuario)
 				{
-//					String sentencia = "INSERT INTO HISTORIAL_ENTRADA_PRAL VALUES ('"+Entrada+"', '"+FechaRegistro+"', '"+Usuario+"')";
-//					base.getAbrirConexion(sentencia);
-//					base.comando.ExecuteNonQuery();
-//					base.conexion.Close();
+					String sentencia = "INSERT INTO HISTORIAL_ENTRADA_PRAL VALUES ('"+Entrada+"', '"+FechaRegistro+"', '"+Usuario+"')";
+					base.getAbrirConexion(sentencia);
+					base.comando.ExecuteNonQuery();
+					base.conexion.Close();
 				}
 				#endregion
 				
