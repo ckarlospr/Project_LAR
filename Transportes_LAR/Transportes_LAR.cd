@@ -1,0 +1,2909 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ClassDiagram Zoom="1" MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Transportes_LAR.Interfaz.FormPrincipal" Collapsed="False">
+    <Position X="0.5" Y="16.7" Width="3.787902" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.FormLogin" Collapsed="False">
+    <Position X="0.5" Y="92.6" Width="2.077477" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Usuario.SQL_Usuario" Collapsed="False">
+    <Position X="0.5" Y="3.3" Width="1.990143" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Archivo_Configuracion.Directorio" Collapsed="False">
+    <Position X="0.5" Y="100.3" Width="2.179044" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.Finanzas.FormXCobrar" Collapsed="False">
+    <Position X="0.5" Y="103.2" Width="2.91612" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Archivo_Configuracion.EncriptarDato" Collapsed="False">
+    <Position X="0.5" Y="111.7" Width="1.964792" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Archivo_Configuracion.Lectura_Escritura" Collapsed="False">
+    <Position X="0.5" Y="113.7" Width="2.354303" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.ReportesPrivilegiosPagos" Collapsed="False">
+    <Position X="0.5" Y="115.9" Width="3.178014" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormParametrosCombu" Collapsed="False">
+    <Position X="0.5" Y="119.7" Width="3.008288" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Anticipos.SQL_Anticipos" Collapsed="False">
+    <Position X="2.8" Y="3.3" Width="2.432721" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Aptomedico.SQL_Aptomedico" Collapsed="False">
+    <Position X="5.6" Y="3.3" Width="2.354625" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.FormVerOperador" Collapsed="False">
+    <Position X="0.5" Y="125" Width="2.733502" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.Finanzas.Validado" Collapsed="False">
+    <Position X="0.5" Y="128.1" Width="1.559088" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.FormCabiosReg" Collapsed="False">
+    <Position X="0.5" Y="130.4" Width="2.242262" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormPrincCombustible" Collapsed="False">
+    <Position X="0.5" Y="139.1" Width="3.837638" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Asignacion.SQL_OperadorVehiculo" Collapsed="False">
+    <Position X="8.4" Y="3.3" Width="2.985729" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Asignacion.SQL_Ruta" Collapsed="False">
+    <Position X="11.8" Y="3.3" Width="1.95174" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.FormCobroCasetas" Collapsed="False">
+    <Position X="0.5" Y="176.5" Width="2.664162" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Cliente.SQL_CLiente" Collapsed="False">
+    <Position X="14.1" Y="3.3" Width="1.93901" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Cliente.SQL_Contacto" Collapsed="False">
+    <Position X="16.5" Y="3.3" Width="2.128932" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.PrivilegiosPagos" Collapsed="False">
+    <Position X="0.5" Y="183.5" Width="4.663229" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Combustible.SQL_Combustible" Collapsed="False">
+    <Position X="19" Y="3.3" Width="2.93696" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Contrato.SQL_Contrato" Collapsed="False">
+    <Position X="22.3" Y="3.3" Width="3.063449" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.FormCuentasEsp" Collapsed="False">
+    <Position X="0.5" Y="211.3" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Nested Types" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Validacion_Final.FormCompletaSaldo" Collapsed="False">
+    <Position X="0.5" Y="242.7" Width="2.658737" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Controles.SQL_Controles" Collapsed="False">
+    <Position X="25.8" Y="3.3" Width="2.194943" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Cuenta.SQL_Cuenta" Collapsed="False">
+    <Position X="28.4" Y="3.3" Width="1.91527" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.FormElimina" Collapsed="False">
+    <Position X="0.5" Y="248.4" Width="1.853825" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Validacion_Final.FormRecuperado" Collapsed="False">
+    <Position X="0.5" Y="252.1" Width="2.91612" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Desapacho.SQL_Operaciones" Collapsed="False">
+    <Position X="30.7" Y="3.3" Width="2.442819" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Evaluacion" Collapsed="False">
+    <Position X="33.5" Y="3.3" Width="1.689469" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.FormFiltros" Collapsed="False">
+    <Position X="0.5" Y="260.1" Width="2.028439" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.formPrincipalComb" Collapsed="False">
+    <Position X="0.5" Y="263.2" Width="3.837638" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.FormFormaPago" Collapsed="False">
+    <Position X="0.5" Y="423.8" Width="2.290709" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Facturacion.SQL_Facturacion" Collapsed="False">
+    <Position X="35.6" Y="3.3" Width="2.34195" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Incapacidad.SQL_Incapacidad" Collapsed="False">
+    <Position X="38.4" Y="3.3" Width="2.380085" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Validacion_Final.FormValidarServicios" Collapsed="False">
+    <Position X="0.5" Y="427.6" Width="2.934596" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.FormFormaPago2" Collapsed="False">
+    <Position X="0.5" Y="438.9" Width="2.416715" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Lector.SQL_Lector" Collapsed="False">
+    <Position X="41.1" Y="3.3" Width="1.786471" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.FormIngresoFact" Collapsed="False">
+    <Position X="0.5" Y="443.2" Width="2.303385" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Libros.SQL_Libros" Collapsed="False">
+    <Position X="43.3" Y="3.3" Width="2.566838" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.FormMalFlujo" Collapsed="False">
+    <Position X="0.5" Y="0.5" Width="3.293009" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro.Dato.datosViajes" Collapsed="False">
+    <Position X="0.5" Y="454.5" Width="1.169469" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro.Dato.ViajesEspeciales" Collapsed="False">
+    <Position X="0.5" Y="456.4" Width="2.296618" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro.FormAnticipos" Collapsed="False">
+    <Position X="0.5" Y="466.7" Width="2.286359" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Mantenimiento.SQL_Mantenimiento" Collapsed="False">
+    <Position X="46.3" Y="3.3" Width="2.645524" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.FormPrivilegioCobro" Collapsed="False">
+    <Position X="0.5" Y="471.7" Width="2.648532" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Nomina.SQL_Aguinaldo" Collapsed="False">
+    <Position X="49.3" Y="3.3" Width="2.167282" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Nomina.SQL_Bono" Collapsed="False">
+    <Position X="51.9" Y="3.3" Width="1.701984" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.FormRango" Collapsed="False">
+    <Position X="0.5" Y="474.8" Width="2.109704" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro.FormAsignacionCobro" Collapsed="False">
+    <Position X="0.5" Y="478.4" Width="2.835124" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Nomina.SQL_Nomina" Collapsed="False">
+    <Position X="54" Y="3.3" Width="2.064425" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormPruebaRendimiento" Collapsed="False">
+    <Position X="0.5" Y="485" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Nomina.SQL_Recibo" Collapsed="False">
+    <Position X="56.5" Y="3.3" Width="1.863385" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.FormTipoPago" Collapsed="False">
+    <Position X="0.5" Y="501" Width="2.424772" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro.FormAsignOperadores" Collapsed="False">
+    <Position X="0.5" Y="507.4" Width="2.87154" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Operador.SQL_Contacto" Collapsed="False">
+    <Position X="58.7" Y="3.3" Width="2.128932" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.FormTotalFecha" Collapsed="False">
+    <Position X="0.5" Y="512.4" Width="2.262028" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Operador.SQL_Dependiente" Collapsed="False">
+    <Position X="61.3" Y="3.3" Width="2.508346" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Operador.SQL_Licencia" Collapsed="False">
+    <Position X="64.2" Y="3.3" Width="2.223893" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro.formAuditacion" Collapsed="False">
+    <Position X="0.5" Y="517.3" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormReporteBonos" Collapsed="False">
+    <Position X="0.5" Y="541.6" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.FormXcobrar" Collapsed="False">
+    <Position X="0.5" Y="551.4" Width="2.695797" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormSeguimientoP" Collapsed="False">
+    <Position X="0.5" Y="556" Width="2.741237" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.FormEfectivoCheque" Collapsed="False">
+    <Position X="0.5" Y="560" Width="2.707936" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro.FormCambiosAsiganacion" Collapsed="False">
+    <Position X="0.5" Y="563.4" Width="3.23946" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormVacios" Collapsed="False">
+    <Position X="0.5" Y="571.8" Width="2.58236" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Operador.SQL_Operador" Collapsed="False">
+    <Position X="66.8" Y="3.3" Width="2.30591" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.FormImportes" Collapsed="False">
+    <Position X="0.5" Y="577" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro.FormDatosFactura" Collapsed="False">
+    <Position X="0.5" Y="585.8" Width="2.466989" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Operador.SQL_Telefono" Collapsed="False">
+    <Position X="69.5" Y="3.3" Width="2.105192" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Reportes.SQL_Reportes" Collapsed="False">
+    <Position X="72" Y="3.3" Width="2.129469" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormValidacionOperaciones" Collapsed="False">
+    <Position X="0.5" Y="594.6" Width="3.762121" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.FormImpuestos" Collapsed="False">
+    <Position X="0.5" Y="614" Width="2.898127" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Ruta.SQL_Ruta" Collapsed="False">
+    <Position X="74.5" Y="3.3" Width="2.65213" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro.FormFacturaEsp" Collapsed="False">
+    <Position X="0.5" Y="619.4" Width="2.928849" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.SegurosAseguradora.ConexionSegurosAseguradoras" Collapsed="False">
+    <Position X="77.6" Y="3.3" Width="3.791501" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Servidor" Collapsed="False">
+    <Position X="0.5" Y="625.1" Width="1.889596" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.FormIngresoExtra" Collapsed="False">
+    <Position X="0.5" Y="627.8" Width="2.551798" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.SQL_Conexion" Collapsed="False">
+    <Position X="0.5" Y="0.5" Width="2.141876" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Configuracion.FormConfiguracion" Collapsed="False">
+    <Position X="0.5" Y="636.1" Width="2.507594" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro.FormIngresoRapido" Collapsed="False">
+    <Position X="0.5" Y="641.9" Width="2.58193" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Unidad.SQL_Equipamiento" Collapsed="False">
+    <Position X="81.8" Y="3.3" Width="2.79296" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Unidad.SQL_UnidadFotos" Collapsed="False">
+    <Position X="85" Y="3.3" Width="2.442819" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Configuracion.Operacion" Collapsed="False">
+    <Position X="0.5" Y="657.7" Width="1.625016" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Consultas.FormConsultas" Collapsed="False">
+    <Position X="0.5" Y="659.6" Width="2.199025" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro.FormMixto" Collapsed="False">
+    <Position X="0.5" Y="662.8" Width="1.78443" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Unidad.SQL_Unidad" Collapsed="False">
+    <Position X="87.8" Y="3.3" Width="2.262028" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.FormNomina" Collapsed="False">
+    <Position X="0.5" Y="664.9" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Conexion_Servidor.Zona.SQL_Zona" Collapsed="False">
+    <Position X="90.5" Y="3.3" Width="2.242208" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro.FormReporteVentas" Collapsed="False">
+    <Position X="0.5" Y="742.8" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Contrato.FormDatoContrato" Collapsed="False">
+    <Position X="0.5" Y="751.4" Width="2.454421" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Aptomedico.FormAptoMedico" Collapsed="False">
+    <Position X="0.5" Y="766.7" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro.FormTerminoFact" Collapsed="False">
+    <Position X="0.5" Y="777.1" Width="2.94695" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Aptomedico.FormReporteApto" Collapsed="False">
+    <Position X="0.5" Y="782.1" Width="2.521022" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Contrato.FormHistorialContrato" Collapsed="False">
+    <Position X="0.5" Y="787.3" Width="3.100295" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.FormOperadorExterno" Collapsed="False">
+    <Position X="0.5" Y="799.4" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Aseguradora.Dato.Aseguradora" Collapsed="False">
+    <Position X="0.5" Y="810.9" Width="1.875631" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Controles.Uber_Taxi.FormCancela" Collapsed="False">
+    <Position X="0.5" Y="814" Width="2.110885" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Aseguradora.Dato.SegurosAseguradoras" Collapsed="False">
+    <Position X="0.5" Y="818.6" Width="2.832868" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro.FormValidacionEsp" Collapsed="False">
+    <Position X="0.5" Y="820.9" Width="2.909298" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Aseguradora.FormAseguradoras" Collapsed="False">
+    <Position X="0.5" Y="834.2" Width="2.550993" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Controles.Uber_Taxi.FormCierreUTextra" Collapsed="False">
+    <Position X="0.5" Y="841.7" Width="2.581017" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.FormReporteNomina" Collapsed="False">
+    <Position X="0.5" Y="847.3" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Incapacidad.FormValidaFact" Collapsed="False">
+    <Position X="0.5" Y="858.6" Width="2.928849" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Nomina_Fiscal.FormCuentaBancaria" Collapsed="False">
+    <Position X="0.5" Y="864.9" Width="2.733073" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Aseguradora.FormSeguros" Collapsed="False">
+    <Position X="0.5" Y="870.6" Width="2.544655" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Controles.Uber_Taxi.FormConfiguracion" Collapsed="False">
+    <Position X="0.5" Y="882.4" Width="2.922887" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Nomina_Fiscal.FormModificaOperador" Collapsed="False">
+    <Position X="0.5" Y="894.2" Width="2.910426" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro.LibroViajes" Collapsed="False">
+    <Position X="0.5" Y="906.4" Width="3.082839" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Asignacion.Dato.Empresa" Collapsed="False">
+    <Position X="0.5" Y="970" Width="1.47154" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Controles.Uber_Taxi.FormReporteUT" Collapsed="False">
+    <Position X="0.5" Y="971.6" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Asignacion.FormDesasignacion" Collapsed="False">
+    <Position X="0.5" Y="985.1" Width="2.601266" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Nomina_Fiscal.FormNominaFiscal" Collapsed="False">
+    <Position X="0.5" Y="996.3" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormAgrupación" Collapsed="False">
+    <Position X="0.5" Y="1028.7" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Asignacion.FormModificarFecha" Collapsed="False">
+    <Position X="0.5" Y="1034.3" Width="2.658522" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Controles.Uber_Taxi.FormUber_Taxi" Collapsed="False">
+    <Position X="0.5" Y="1038.9" Width="2.923908" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Asignacion.FormOperadorVehiculo" Collapsed="False">
+    <Position X="0.5" Y="1058.2" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Nomina_Fiscal.FormSueldoReal" Collapsed="False">
+    <Position X="0.5" Y="1068.4" Width="3.041642" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormEntrada" Collapsed="False">
+    <Position X="0.5" Y="1077.8" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Controles.Uber_Taxi.FormUber_TaxiExtra" Collapsed="False">
+    <Position X="0.5" Y="1088.4" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Nomina_Fiscal.FormValidaCuenta" Collapsed="False">
+    <Position X="0.5" Y="1102" Width="2.469997" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Facturacion.FormCancelaFactura" Collapsed="False">
+    <Position X="0.5" Y="1106.6" Width="2.707721" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Caja.FormPrincipalCaja" Collapsed="False">
+    <Position X="0.5" Y="1113.4" Width="3.067262" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormExistencia" Collapsed="False">
+    <Position X="0.5" Y="1128.5" Width="2.879489" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Facturacion.FormCobroFactura" Collapsed="False">
+    <Position X="0.5" Y="1138" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Recibo.FormRecibo" Collapsed="False">
+    <Position X="0.5" Y="1149.2" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormIntervencion" Collapsed="False">
+    <Position X="0.5" Y="1181.1" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Caja.FormResponsable" Collapsed="False">
+    <Position X="0.5" Y="1186.9" Width="2.853009" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Recibo.FormSueldos" Collapsed="False">
+    <Position X="0.5" Y="1194.9" Width="2.841461" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Facturacion.FormControl" Collapsed="False">
+    <Position X="0.5" Y="1203" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormMovimientos" Collapsed="False">
+    <Position X="0.5" Y="1214.4" Width="2.683659" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Chat.Cliente" Collapsed="False">
+    <Position X="0.5" Y="1220.2" Width="2.127589" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Facturacion.FormFactHenniges" Collapsed="False">
+    <Position X="0.5" Y="1226.6" Width="3.012155" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.SinPrecio.FormViajesSinPrecio" Collapsed="False">
+    <Position X="0.5" Y="1237" Width="3.170763" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Checador.FormPrincChecador" Collapsed="False">
+    <Position X="0.5" Y="1244.6" Width="2.606852" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormOrdenCompra" Collapsed="False">
+    <Position X="0.5" Y="1252.4" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Notificaciones.FormNCumpleanos" Collapsed="False">
+    <Position X="0.5" Y="1275.6" Width="2.543903" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Facturacion.FormFacturar" Collapsed="False">
+    <Position X="0.5" Y="1278.9" Width="2.507702" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Dato.Apoyo" Collapsed="False">
+    <Position X="0.5" Y="1286.3" Width="1.364547" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Cliente.Dato.Contacto" Collapsed="False">
+    <Position X="0.5" Y="1288.2" Width="1.542814" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormProducto" Collapsed="False">
+    <Position X="0.5" Y="1290.7" Width="3.010544" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Dato.Busqueda" Collapsed="False">
+    <Position X="0.5" Y="1306.4" Width="1.584923" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Cliente.FormBuscar" Collapsed="False">
+    <Position X="0.5" Y="1309.1" Width="2.639938" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Facturacion.FormPagada" Collapsed="False">
+    <Position X="0.5" Y="1314.6" Width="1.888092" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Dato.Especial" Collapsed="False">
+    <Position X="0.5" Y="1319.4" Width="1.617204" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Dato.msjGerencial" Collapsed="False">
+    <Position X="0.5" Y="1325.2" Width="1.465041" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Dato.msjGral" Collapsed="False">
+    <Position X="0.5" Y="1327.7" Width="1.402145" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Dato.msjRuta" Collapsed="False">
+    <Position X="0.5" Y="1329.8" Width="1.596901" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Dato.Operador" Collapsed="False">
+    <Position X="0.5" Y="1331.5" Width="1.459884" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Facturacion.FormPreciosF" Collapsed="False">
+    <Position X="0.5" Y="1334.9" Width="3.150675" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Dato.OrdenEmpresas" Collapsed="False">
+    <Position X="0.5" Y="1350" Width="1.390939" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Cliente.FormBusquedaCliente" Collapsed="False">
+    <Position X="0.5" Y="1352" Width="2.835338" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Dato.Ruta" Collapsed="False">
+    <Position X="0.5" Y="1362.2" Width="1.326735" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Dato.RutasEspecial" Collapsed="False">
+    <Position X="0.5" Y="1365.1" Width="1.329367" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormProveedores" Collapsed="False">
+    <Position X="0.5" Y="1366.8" Width="3.079777" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Dato.Unidades" Collapsed="False">
+    <Position X="0.5" Y="1380.6" Width="1.408537" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Despacho.Conteo" Collapsed="False">
+    <Position X="0.5" Y="1382.7" Width="1.348459" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Despacho.FormPrincOperadores" Collapsed="False">
+    <Position X="0.5" Y="1385" Width="2.820944" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Cliente.FormCliente" Collapsed="False">
+    <Position X="0.5" Y="1391.6" Width="2.79758" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormRegistrosComp" Collapsed="False">
+    <Position X="0.5" Y="1399.9" Width="2.669586" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Despacho.FormProgramaRecados" Collapsed="False">
+    <Position X="0.5" Y="1404.6" Width="2.995934" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Cliente.FormContacto" Collapsed="False">
+    <Position X="0.5" Y="1414.3" Width="2.539123" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormSalida" Collapsed="False">
+    <Position X="0.5" Y="1422.7" Width="2.847262" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.FormMensaje" Collapsed="False">
+    <Position X="0.5" Y="1430.4" Width="1.964684" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Despacho.FormRecadoOperador" Collapsed="False">
+    <Position X="0.5" Y="1433.2" Width="2.87777" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Cliente.FormHistorialEmpresa" Collapsed="False">
+    <Position X="0.5" Y="1438.2" Width="2.835876" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.Orden_Trabajo.FormCancelarOrdenTrabajo" Collapsed="False">
+    <Position X="0.5" Y="1444.9" Width="3.414235" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Despacho.FormRecados" Collapsed="False">
+    <Position X="0.5" Y="1449.8" Width="2.87777" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.Orden_Trabajo.FormOrdenTrabajoCambiarSalida" Collapsed="False">
+    <Position X="0.5" Y="1454.2" Width="3.996139" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Incapacidad.FormIncapacidades" Collapsed="False">
+    <Position X="0.5" Y="1462.5" Width="3.035143" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Cliente.FormOrdenEmpresas" Collapsed="False">
+    <Position X="0.5" Y="1472.8" Width="2.756598" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormAddDelRutas" Collapsed="False">
+    <Position X="0.5" Y="1478.6" Width="2.443249" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormAddRutas" Collapsed="False">
+    <Position X="0.5" Y="1483.6" Width="2.539123" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Cliente.FormContratoEmpresa" Collapsed="False">
+    <Position X="0.5" Y="1488.1" Width="2.882497" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.Orden_Trabajo.FormOrdenTrabajoEntrada" Collapsed="False">
+    <Position X="0.5" Y="1491.8" Width="3.379162" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Lector.FormCapture_Stream" Collapsed="False">
+    <Position X="0.5" Y="1505.8" Width="2.7682" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Nested Types" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Cliente.Modificar.FormContacto" Collapsed="False">
+    <Position X="0.5" Y="1511.4" Width="2.237106" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormApoyos" Collapsed="False">
+    <Position X="0.5" Y="1517.3" Width="2.507433" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.Orden_Trabajo.FormOrdenTrabajoFallasReportadas" Collapsed="False">
+    <Position X="0.5" Y="1524.7" Width="4.284674" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Lector.FormMain" Collapsed="False">
+    <Position X="0.5" Y="1532.5" Width="2.978532" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Nested Types" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.Datos.Autorizaciones" Collapsed="False">
+    <Position X="0.5" Y="1569.2" Width="1.917824" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.Datos.Coordenadas" Collapsed="False">
+    <Position X="0.5" Y="1572" Width="1.269963" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.Datos.DatosMatriz" Collapsed="False">
+    <Position X="0.5" Y="1573.9" Width="1.166589" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.Datos.Kilometrajes" Collapsed="False">
+    <Position X="0.5" Y="1575.7" Width="1.189093" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormCancelCambio" Collapsed="False">
+    <Position X="0.5" Y="1577.3" Width="2.612599" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.Orden_Trabajo.FormOrdenTrabajoModificaMecanico" Collapsed="False">
+    <Position X="0.5" Y="1585.3" Width="4.323668" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.EasyTrack.FormDatos" Collapsed="False">
+    <Position X="0.5" Y="1595.8" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormCancelEsp" Collapsed="False">
+    <Position X="0.5" Y="1612.8" Width="2.612599" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Lector.FormReader_Select" Collapsed="False">
+    <Position X="0.5" Y="1617.8" Width="2.6061" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormAgregarExternaOtroDia" Collapsed="False">
+    <Position X="0.5" Y="1622.2" Width="3.47568" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.Orden_Trabajo.FormOrdenTrabajoSalida" Collapsed="False">
+    <Position X="0.5" Y="1626.5" Width="3.320832" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormComentario" Collapsed="False">
+    <Position X="0.5" Y="1633.5" Width="2.532838" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Lector.FormVerification" Collapsed="False">
+    <Position X="0.5" Y="1636.1" Width="2.231735" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Nested Types" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.Complementos.Orden_Trabajo.FormReprogramarFallas" Collapsed="False">
+    <Position X="0.5" Y="1641.4" Width="3.320832" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormComentarios" Collapsed="False">
+    <Position X="0.5" Y="1648.7" Width="2.392653" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormAgregarPruebaR" Collapsed="False">
+    <Position X="0.5" Y="1652.7" Width="2.807086" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormDatosEspecial" Collapsed="False">
+    <Position X="0.5" Y="1662.4" Width="2.557975" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.FormAlmacen" Collapsed="False">
+    <Position X="0.5" Y="1671.6" Width="2.312194" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Complementos_Libro.FormCabiosValidacion" Collapsed="False">
+    <Position X="0.5" Y="1675.4" Width="2.863053" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormAutorizacion" Collapsed="False">
+    <Position X="0.5" Y="1683.9" Width="2.368859" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.FormEstadoUnidad" Collapsed="False">
+    <Position X="0.5" Y="1687.5" Width="2.816325" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormDatosOperador" Collapsed="False">
+    <Position X="0.5" Y="1734.5" Width="2.655944" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormAutorizaciones" Collapsed="False">
+    <Position X="0.5" Y="1739.5" Width="2.595788" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Complementos_Libro.FormCambiarAcuerdo" Collapsed="False">
+    <Position X="0.5" Y="1743.2" Width="2.808268" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormCombOperaciones" Collapsed="False">
+    <Position X="0.5" Y="1747.5" Width="2.997331" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Complementos_Libro.FormCancelacionCotizacion" Collapsed="False">
+    <Position X="0.5" Y="1757.8" Width="3.417135" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormEmpresasOperaciones" Collapsed="False">
+    <Position X="0.5" Y="1763.7" Width="3.412946" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.FormESvehiculos" Collapsed="False">
+    <Position X="0.5" Y="1784.9" Width="2.898771" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormComentarioReporte" Collapsed="False">
+    <Position X="0.5" Y="1796.4" Width="3.085309" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Complementos_Libro.FormCancelarVehiculo" Collapsed="False">
+    <Position X="0.5" Y="1800.4" Width="2.886794" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Complementos_Libro.FormConfirmarServicio" Collapsed="False">
+    <Position X="0.5" Y="1803.9" Width="2.911286" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.FormMantenimientosPreventivos" Collapsed="False">
+    <Position X="0.5" Y="1807.9" Width="3.894196" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormFaltantes" Collapsed="False">
+    <Position X="0.5" Y="1810" Width="2.191505" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormCompCombustible" Collapsed="False">
+    <Position X="0.5" Y="1814.7" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Mantenimiento.FormOrdenTrabajo" Collapsed="False">
+    <Position X="0.5" Y="1856.3" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormGloboMsj" Collapsed="False">
+    <Position X="0.5" Y="1884.9" Width="2.141769" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Complementos_Libro.FormConfirmaServicio" Collapsed="False">
+    <Position X="0.5" Y="1887.6" Width="2.835876" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormListaSueldos" Collapsed="False">
+    <Position X="0.5" Y="1902.9" Width="2.802253" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormContrasena" Collapsed="False">
+    <Position X="0.5" Y="1906.5" Width="2.331852" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Complementos_Libro.FormEncuestaPost" Collapsed="False">
+    <Position X="0.5" Y="1910" Width="2.641603" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Monitoreo.FormDetalleLicencia" Collapsed="False">
+    <Position X="0.5" Y="1919.4" Width="2.648854" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormMensaje" Collapsed="False">
+    <Position X="0.5" Y="1924.4" Width="2.511891" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormDatosDia" Collapsed="False">
+    <Position X="0.5" Y="1928.6" Width="2.188229" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormModificaOperador" Collapsed="False">
+    <Position X="0.5" Y="1934.3" Width="2.910426" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Monitoreo.FormLicencia" Collapsed="False">
+    <Position X="0.5" Y="1947.2" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormPrincEspeciales" Collapsed="False">
+    <Position X="0.5" Y="1957.5" Width="2.842106" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormDatosExternos" Collapsed="False">
+    <Position X="0.5" Y="1967.7" Width="2.727756" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Complementos_Libro.FormEncuestaPost2" Collapsed="False">
+    <Position X="0.5" Y="1976.5" Width="2.885128" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormEspExternas" Collapsed="False">
+    <Position X="0.5" Y="2015.5" Width="2.391579" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormPrin_Empresas" Collapsed="False">
+    <Position X="0.5" Y="2018.2" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormMsjDatosOperador" Collapsed="False">
+    <Position X="0.5" Y="2043.1" Width="3.009684" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Monitoreo.FormMonitoreoContrato" Collapsed="False">
+    <Position X="0.5" Y="2047.1" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormMsjGral" Collapsed="False">
+    <Position X="0.5" Y="2056.7" Width="2.045251" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormExternos" Collapsed="False">
+    <Position X="0.5" Y="2059.8" Width="2.727756" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormPruebaRendimiento" Collapsed="False">
+    <Position X="0.5" Y="2071.8" Width="3.112164" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Monitoreo.ReporteLicencia" Collapsed="False">
+    <Position X="0.5" Y="2076" Width="2.678288" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormNuevaRuta" Collapsed="False">
+    <Position X="0.5" Y="2081.8" Width="2.581125" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Complementos_Libro.FormEnviarCorreo" Collapsed="False">
+    <Position X="0.5" Y="2086.4" Width="2.48799" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormPruebasRend" Collapsed="False">
+    <Position X="0.5" Y="2094.3" Width="2.492448" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormFaltantes" Collapsed="False">
+    <Position X="0.5" Y="2098.7" Width="2.112121" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Complementos_Libro.formParametro" Collapsed="False">
+    <Position X="0.5" Y="2104.5" Width="2.089079" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Facturacion.FormFacturacion" Collapsed="False">
+    <Position X="0.5" Y="2109" Width="3.762121" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormReconRutas" Collapsed="False">
+    <Position X="0.5" Y="2212.8" Width="2.353766" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormOperacionesOperador" Collapsed="False">
+    <Position X="0.5" Y="2217.3" Width="3.350104" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormFaltantesOtros" Collapsed="False">
+    <Position X="0.5" Y="2225.6" Width="2.659596" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormRefRutas" Collapsed="False">
+    <Position X="0.5" Y="2232.1" Width="2.324386" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Complementos_Libro.FormParametros" Collapsed="False">
+    <Position X="0.5" Y="2234.9" Width="2.928581" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormOperadores" Collapsed="False">
+    <Position X="0.5" Y="2240" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormRutasCercanas" Collapsed="False">
+    <Position X="0.5" Y="2252.3" Width="2.668512" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Complementos_Libro.FormReportes" Collapsed="False">
+    <Position X="0.5" Y="2256" Width="2.15423" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Anticipos.FormHistorialTotalizado" Collapsed="False">
+    <Position X="0.5" Y="2264.8" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormHistorialValidacion" Collapsed="False">
+    <Position X="0.5" Y="2268" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormSuplente" Collapsed="False">
+    <Position X="0.5" Y="2275" Width="2.63779" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Complementos_Libro.FormValidacionServicios" Collapsed="False">
+    <Position X="0.5" Y="2279" Width="3.078327" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Anticipos.FormModificarFechaAnticipo" Collapsed="False">
+    <Position X="0.5" Y="2291.3" Width="3.467301" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormInicializaComb" Collapsed="False">
+    <Position X="0.5" Y="2294.9" Width="2.585582" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.Turno" Collapsed="False">
+    <Position X="0.5" Y="2298" Width="2.368" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormOperadorEsp" Collapsed="False">
+    <Position X="0.5" Y="2301.5" Width="3.078864" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Anticipos.FormMotivoEliminar" Collapsed="False">
+    <Position X="0.5" Y="2310.9" Width="2.597936" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormJustifica" Collapsed="False">
+    <Position X="0.5" Y="2314" Width="2.112121" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Dato.datosViajes" Collapsed="False">
+    <Position X="0.5" Y="2317.6" Width="1.169469" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormOrdenEmpresas" Collapsed="False">
+    <Position X="0.5" Y="2319.6" Width="2.756598" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Dato.Candidatos" Collapsed="False">
+    <Position X="0.5" Y="2324.9" Width="1.133073" />
+    <Compartments />
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Dato.Telefonos" Collapsed="False">
+    <Position X="0.5" Y="2326" Width="1.284035" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Dato.Parametros" Collapsed="False">
+    <Position X="0.5" Y="2328.3" Width="1.806051" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Dato.LicenciasAjuste" Collapsed="False">
+    <Position X="0.5" Y="2333.3" Width="1.617204" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Dato.Zonas" Collapsed="False">
+    <Position X="0.5" Y="2336" Width="1.27007" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Dato.Fuentes" Collapsed="False">
+    <Position X="0.5" Y="2337.9" Width="1.27007" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Dato.ViajesEspeciales" Collapsed="False">
+    <Position X="0.5" Y="2339.8" Width="2.296618" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Dato.Licencia" Collapsed="False">
+    <Position X="0.5" Y="2350.1" Width="1.302995" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Dato.Telefono" Collapsed="False">
+    <Position X="0.5" Y="2352.3" Width="1.460368" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Dato.Dependiente" Collapsed="False">
+    <Position X="0.5" Y="2354.2" Width="1.731125" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Dato.Contacto" Collapsed="False">
+    <Position X="0.5" Y="2356.1" Width="1.497321" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Dato.Operador" Collapsed="False">
+    <Position X="0.5" Y="2359.5" Width="1.515905" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Dato.Patron" Collapsed="False">
+    <Position X="0.5" Y="2361.1" Width="1.524176" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Dato.OperadorDato" Collapsed="False">
+    <Position X="0.5" Y="2363.6" Width="1.442106" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Dato.OperadorContrato" Collapsed="False">
+    <Position X="0.5" Y="2365.5" Width="1.832531" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormMensajeRend" Collapsed="False">
+    <Position X="0.5" Y="2369.1" Width="2.506305" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.FormDetalleFactura" Collapsed="False">
+    <Position X="0.5" Y="2376.4" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Anticipos.FormPrestamoTotalizado" Collapsed="False">
+    <Position X="0.5" Y="2382.8" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Dato.Reconocimiento" Collapsed="False">
+    <Position X="0.5" Y="2393.5" Width="1.381969" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.FormBusquedaAdmin" Collapsed="False">
+    <Position X="0.5" Y="2395.4" Width="2.770993" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormModificarMovimiento" Collapsed="False">
+    <Position X="0.5" Y="2403.2" Width="3.189831" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operaciones.FormPasajeros" Collapsed="False">
+    <Position X="0.5" Y="2407.3" Width="2.940773" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.FormBusquedaOperador" Collapsed="False">
+    <Position X="0.5" Y="2416.1" Width="3.084557" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormMovimientos" Collapsed="False">
+    <Position X="0.5" Y="2423.7" Width="2.991046" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Anticipos.FormPrincAnticipos" Collapsed="False">
+    <Position X="0.5" Y="2430.1" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.FormContacto" Collapsed="False">
+    <Position X="0.5" Y="2484.7" Width="2.602126" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.FormLibroViajes" Collapsed="False">
+    <Position X="0.5" Y="2495.2" Width="3.801652" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Combustible.FormNoRealizoRevizado" Collapsed="False">
+    <Position X="0.5" Y="2585.4" Width="3.100778" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.FormDetalleBaja" Collapsed="False">
+    <Position X="0.5" Y="2589.4" Width="2.538263" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.FormExperiencia" Collapsed="False">
+    <Position X="0.5" Y="2594.3" Width="2.94131" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.FormCuentaBancaria" Collapsed="False">
+    <Position X="0.5" Y="2602" Width="2.733073" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.FormLicencia" Collapsed="False">
+    <Position X="0.5" Y="2608.1" Width="2.539123" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Anticipos.FormTaxi" Collapsed="False">
+    <Position X="0.5" Y="2615.5" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.FormGastosServicios" Collapsed="False">
+    <Position X="0.5" Y="2633.2" Width="3.167379" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.FormIncobrable" Collapsed="False">
+    <Position X="0.5" Y="2644.4" Width="2.311442" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.Anticipos" Collapsed="False">
+    <Position X="0.5" Y="2650.7" Width="2.671305" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.FormDependiente" Collapsed="False">
+    <Position X="0.5" Y="2657.6" Width="2.539123" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Modificar.FormModificaOp" Collapsed="False">
+    <Position X="0.5" Y="2664.1" Width="2.659489" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Anticipos.FormTaxiPago" Collapsed="False">
+    <Position X="0.5" Y="2671.5" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.FormIngresaFactura" Collapsed="False">
+    <Position X="0.5" Y="2677.9" Width="2.630807" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.FormAvisoFacturaP" Collapsed="False">
+    <Position X="0.5" Y="2681.9" Width="3.167379" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Bono.FormBonificacion" Collapsed="False">
+    <Position X="0.5" Y="2687.4" Width="2.374499" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.FormInsertarCobro" Collapsed="False">
+    <Position X="0.5" Y="2694.2" Width="2.579621" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.FormCambioPrecioVehiculo" Collapsed="False">
+    <Position X="0.5" Y="2700.9" Width="3.404352" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.FormOperador" Collapsed="False">
+    <Position X="0.5" Y="2706.1" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Modificar.FormContacto" Collapsed="False">
+    <Position X="0.5" Y="2732.6" Width="2.237106" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Modificar.FormDependiente" Collapsed="False">
+    <Position X="0.5" Y="2740.5" Width="2.39319" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Bono.FormBonos" Collapsed="False">
+    <Position X="0.5" Y="2745.6" Width="2.880026" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.FormModificaAnticipo" Collapsed="False">
+    <Position X="0.5" Y="2754" Width="2.762077" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.FormCobroValidacion" Collapsed="False">
+    <Position X="0.5" Y="2759.3" Width="2.773463" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Modificar.FormLicencia" Collapsed="False">
+    <Position X="0.5" Y="2767.2" Width="2.237106" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.FormOrdenCaritas" Collapsed="False">
+    <Position X="0.5" Y="2772.8" Width="2.455602" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Bono.FormPerdida" Collapsed="False">
+    <Position X="0.5" Y="2776.5" Width="2.639455" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.FormContribuyentes" Collapsed="False">
+    <Position X="0.5" Y="2784.4" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.FormModificarTipoP" Collapsed="False">
+    <Position X="0.5" Y="2795.1" Width="2.621999" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Modificar.FormTelefono" Collapsed="False">
+    <Position X="0.5" Y="2798.7" Width="2.237106" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Dato.Nomina" Collapsed="False">
+    <Position X="0.5" Y="2803.9" Width="1.466706" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.FormPuesto" Collapsed="False">
+    <Position X="0.5" Y="2807.2" Width="2.829162" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Dato.ViajeEmpresarial" Collapsed="False">
+    <Position X="0.5" Y="2813.2" Width="1.491359" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.Finanzas.Anticipos" Collapsed="False">
+    <Position X="0.5" Y="2816.7" Width="1.465041" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.FormNuevoAnticipo" Collapsed="False">
+    <Position X="0.5" Y="2818.9" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.Finanzas.DatosPrin" Collapsed="False">
+    <Position X="0.5" Y="2828.1" Width="1.842306" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Operacion" Collapsed="False">
+    <Position X="0.5" Y="2831.5" Width="1.774601" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.FormTelefono" Collapsed="False">
+    <Position X="0.5" Y="2833.8" Width="2.539123" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormApto" Collapsed="False">
+    <Position X="0.5" Y="2840.6" Width="2.109381" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.Finanzas.FormAnticipos" Collapsed="False">
+    <Position X="0.5" Y="2848.4" Width="2.671305" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.FormControlPagos" Collapsed="False">
+    <Position X="0.5" Y="2854.9" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormCancelaLlamada" Collapsed="False">
+    <Position X="0.5" Y="2870.2" Width="2.809987" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.FormOrdenFactura" Collapsed="False">
+    <Position X="0.5" Y="2874.7" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormCitas" Collapsed="False">
+    <Position X="0.5" Y="2884.6" Width="2.602555" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.Finanzas.FormCompleta" Collapsed="False">
+    <Position X="0.5" Y="2891.3" Width="2.242262" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.FormPagoCobroEspecial" Collapsed="False">
+    <Position X="0.5" Y="2897" Width="3.112272" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormContratacion" Collapsed="False">
+    <Position X="0.5" Y="2909.3" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.Finanzas.FormDatosIncobrable" Collapsed="False">
+    <Position X="0.5" Y="2976.6" Width="2.758209" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormCitaWhatsapp" Collapsed="False">
+    <Position X="0.5" Y="2980.5" Width="2.531335" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormRechazar" Collapsed="False">
+    <Position X="0.5" Y="2984.5" Width="2.10342" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.Finanzas.FormPendientes" Collapsed="False">
+    <Position X="0.5" Y="2989.4" Width="2.758424" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Libro_Nuevo.Pagos.FormPagos" Collapsed="False">
+    <Position X="0.5" Y="2997.3" Width="2.413922" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormReCita" Collapsed="False">
+    <Position X="0.5" Y="3002.3" Width="2.10342" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.Foto" Collapsed="False">
+    <Position X="0.5" Y="3006.5" Width="2.561466" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.Cardex.FormOtros2" Collapsed="False">
+    <Position X="0.5" Y="3011.3" Width="2.973214" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Nomina.Especiales.Finanzas.FormReporte" Collapsed="False">
+    <Position X="0.5" Y="3026" Width="2.934596" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.FormReconocimientoRuta" Collapsed="False">
+    <Position X="0.5" Y="3038.4" Width="3.212819" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormRegistar" Collapsed="False">
+    <Position X="0.5" Y="3048.9" Width="2.955866" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormImagen" Collapsed="False">
+    <Position X="0.5" Y="3066" Width="2.10342" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.FormReporteBonificaciones" Collapsed="False">
+    <Position X="0.5" Y="3084.5" Width="3.378034" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.FormReportesAltaBajaOperador" Collapsed="False">
+    <Position X="0.5" Y="3090.9" Width="3.829957" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormLicenciasAjuste" Collapsed="False">
+    <Position X="0.5" Y="3095" Width="2.685378" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormTelefonos" Collapsed="False">
+    <Position X="0.5" Y="3100.7" Width="2.678288" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.Cardex.FormSeguimiento" Collapsed="False">
+    <Position X="0.5" Y="3107.8" Width="2.369128" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.ClassDatos" Collapsed="False">
+    <Position X="0.5" Y="3110.9" Width="1.188268" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.FormReporteCombustible" Collapsed="False">
+    <Position X="0.5" Y="3113.9" Width="3.174899" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.Dato.Conteo" Collapsed="False">
+    <Position X="0.5" Y="3123.1" Width="1.27007" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.FormReporteViajesDespacho" Collapsed="False">
+    <Position X="0.5" Y="3124.7" Width="3.699118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormLlamada" Collapsed="False">
+    <Position X="0.5" Y="3147" Width="2.955866" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.Dato.FormRutasFaltantes" Collapsed="False">
+    <Position X="0.5" Y="3171.5" Width="2.632204" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormValidaCitas" Collapsed="False">
+    <Position X="0.5" Y="3175.2" Width="2.847638" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormMensajes" Collapsed="False">
+    <Position X="0.5" Y="3181.3" Width="2.078014" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.FormReporteGerencial" Collapsed="False">
+    <Position X="0.5" Y="3184.1" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.FormViajesExternos" Collapsed="False">
+    <Position X="0.5" Y="3192.6" Width="2.620924" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.FormAvisoBajas" Collapsed="False">
+    <Position X="0.5" Y="3196.3" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormValidaDatos" Collapsed="False">
+    <Position X="0.5" Y="3207.6" Width="2.723297" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormMotivoBT" Collapsed="False">
+    <Position X="0.5" Y="3223.1" Width="2.526984" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.FormReporteNomina" Collapsed="False">
+    <Position X="0.5" Y="3227.3" Width="2.694938" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.FormViajesOperador" Collapsed="False">
+    <Position X="0.5" Y="3233.8" Width="2.683874" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.FormCardex" Collapsed="False">
+    <Position X="0.5" Y="3240.3" Width="2.892702" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormParametros" Collapsed="False">
+    <Position X="0.5" Y="3252.1" Width="2.489118" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.FormReporteOperaciones" Collapsed="False">
+    <Position X="0.5" Y="3265.7" Width="3.198961" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Operador.Pre_Seleccion.FormZonasFuentes" Collapsed="False">
+    <Position X="0.5" Y="3270.7" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Ruta.Complemento_Cambio_ruta.FormExtraANormal" Collapsed="False">
+    <Position X="0.5" Y="3278.3" Width="2.518337" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.FormCardexCoordinador" Collapsed="False">
+    <Position X="0.5" Y="3287.3" Width="3.085417" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.FormReporteRutas" Collapsed="False">
+    <Position X="0.5" Y="3292.3" Width="2.563454" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.Cardex.FormOtros" Collapsed="False">
+    <Position X="0.5" Y="3299.3" Width="2.733502" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Ruta.FormRutasExtras" Collapsed="False">
+    <Position X="0.5" Y="3307" Width="2.853009" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.FormIncidencias" Collapsed="False">
+    <Position X="0.5" Y="3322.7" Width="3.067262" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Ruta.FormBuscar" Collapsed="False">
+    <Position X="0.5" Y="3327" Width="2.410592" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Unidad.FotografiaU" Collapsed="False">
+    <Position X="0.5" Y="3332.6" Width="1.763376" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Ruta.FormTipoRuta" Collapsed="False">
+    <Position X="0.5" Y="3335.7" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Reportes.FormReporteRutasExtras" Collapsed="False">
+    <Position X="0.5" Y="3348" Width="3.146969" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Unidad.Gestoria.FormParametrosGestoria" Collapsed="False">
+    <Position X="0.5" Y="3354.9" Width="3.135583" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Zona.FormAgregar" Collapsed="False">
+    <Position X="0.5" Y="3361" Width="2.355807" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Unidad.Dato.Equipamiento" Collapsed="False">
+    <Position X="0.5" Y="3365.5" Width="1.466652" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Unidad.Dato.Categoria" Collapsed="False">
+    <Position X="0.5" Y="3367.6" Width="1.466652" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Unidad.FormBusquedaUnidad" Collapsed="False">
+    <Position X="0.5" Y="3369.2" Width="2.879489" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Ruta.FormBusquedaRuta" Collapsed="False">
+    <Position X="0.5" Y="3378" Width="2.605993" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Zona.FormRelacion" Collapsed="False">
+    <Position X="0.5" Y="3392.1" Width="3.925724" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Unidad.Gestoria.Gestoria" Collapsed="False">
+    <Position X="0.5" Y="3399.6" Width="3.636115" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Proceso.PDF" Collapsed="False">
+    <Position X="0.5" Y="3420.5" Width="2.634513" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Proceso.PDFFooter" Collapsed="False">
+    <Position X="0.5" Y="3437.2" Width="1.686354" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Unidad.FormEquipamiento" Collapsed="False">
+    <Position X="0.5" Y="3439.4" Width="2.898771" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Zona.FormRemover" Collapsed="False">
+    <Position X="0.5" Y="3446.8" Width="2.026022" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Proceso.PDFooterFactura" Collapsed="False">
+    <Position X="0.5" Y="3452" Width="2.316061" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Proceso.PDFooterVentas" Collapsed="False">
+    <Position X="0.5" Y="3453.9" Width="2.253327" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Proceso.RedimensionarImagen" Collapsed="False">
+    <Position X="0.5" Y="3455.7" Width="2.860475" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Ruta.FormProgramaRutas" Collapsed="False">
+    <Position X="0.5" Y="3457.6" Width="2.693542" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Unidad.Operacion" Collapsed="False">
+    <Position X="0.5" Y="3463.4" Width="1.682218" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Proceso.Semana" Collapsed="False">
+    <Position X="0.5" Y="3465.4" Width="1.479513" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Zona.FormZona" Collapsed="False">
+    <Position X="0.5" Y="3467.3" Width="2.639884" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Unidad.FormFotos" Collapsed="False">
+    <Position X="0.5" Y="3475.3" Width="2.420529" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Usuario.FormBusquedaUsuario" Collapsed="False">
+    <Position X="0.5" Y="3482.6" Width="2.90946" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Proceso.ValidarCampo" Collapsed="False">
+    <Position X="0.5" Y="3489.6" Width="2.286789" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Program" Collapsed="False">
+    <Position X="0.5" Y="3494.3" Width="1.444186" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.LAR" Collapsed="False">
+    <Position X="0.5" Y="3495.7" Width="1.824928" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Properties.Resources" Collapsed="False">
+    <Position X="0.5" Y="3498.2" Width="2.472174" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Ruta.FormRuta" Collapsed="False">
+    <Position X="0.5" Y="3500.6" Width="2.675495" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Unidad.FormOperadorVehiculoHistorial" Collapsed="False">
+    <Position X="0.5" Y="3513.8" Width="3.7582" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Usuario.FormDetallePrivilegio" Collapsed="False">
+    <Position X="0.5" Y="3518.9" Width="2.739411" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Proceso.AutoCompleClass" Collapsed="False">
+    <Position X="0.5" Y="3522.6" Width="3.593683" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Usuario.FormModificarCuenta" Collapsed="False">
+    <Position X="0.5" Y="3527.4" Width="2.759284" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Unidad.FormPlacasRevision" Collapsed="False">
+    <Position X="0.5" Y="3532.4" Width="2.998029" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Proceso.Excel" Collapsed="False">
+    <Position X="0.5" Y="3539.7" Width="2.335505" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Usuario.FormUsuario" Collapsed="False">
+    <Position X="0.5" Y="3546.8" Width="2.639884" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Unidad.FormUnidad" Collapsed="False">
+    <Position X="0.5" Y="3556.3" Width="2.808966" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Usuario.Operacion" Collapsed="False">
+    <Position X="0.5" Y="3573.8" Width="1.873805" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Zona.Dato.Zona" Collapsed="False">
+    <Position X="0.5" Y="3576.2" Width="1.364709" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Zona.Dato.Operador" Collapsed="False">
+    <Position X="0.5" Y="3577.7" Width="1.509352" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Interfaz.Zona.Dato.Ruta" Collapsed="False">
+    <Position X="0.5" Y="3579.5" Width="1.559787" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Proceso.FormatosPDF" Collapsed="False">
+    <Position X="0.5" Y="3581.3" Width="2.796613" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Proceso.LimpiarCampo.LimpiarAseguradora" Collapsed="False">
+    <Position X="0.5" Y="3589" Width="2.621139" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Proceso.LimpiarCampo.SegurosAseguradoras" Collapsed="False">
+    <Position X="0.5" Y="3591" Width="2.832868" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="Transportes_LAR.Proceso.Numalet" Collapsed="False">
+    <Position X="0.5" Y="3593.4" Width="2.526769" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+</ClassDiagram>

@@ -1,0 +1,2852 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{812B1989-A062-4517-BFA0-6416904F50A9}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Transportes_LAR</RootNamespace>
+    <AssemblyName>Transportes_LAR</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\TI1\AppData\Roaming\ICSharpCode/SharpDevelop4.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="AForge.Video">
+      <HintPath>bin\Debug\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>bin\Debug\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="DPCtlUruNet" />
+    <Reference Include="DPUruNet" />
+    <Reference Include="itextsharp">
+      <HintPath>bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Ink" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="NumeroLetras">
+      <HintPath>bin\Debug\NumeroLetras.dll</HintPath>
+    </Reference>
+    <Reference Include="SautinSoft.PdfFocus">
+      <HintPath>..\..\PDF Focus .Net Trial %285.4.9.30%29\Bin\Net 2.0\SautinSoft.PdfFocus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Archivo Configuracion\Directorio.cs" />
+    <Compile Include="Archivo Configuracion\EncriptarDato.cs" />
+    <Compile Include="Archivo Configuracion\Lectura_Escritura.cs" />
+    <Compile Include="Conexion Servidor\Anticipos\SQL_Anticipos.cs" />
+    <Compile Include="Conexion Servidor\Aptomedico\SQL_Aptomedico.cs" />
+    <Compile Include="Conexion Servidor\Asignacion\SQL_OperadorVehiculo.cs" />
+    <Compile Include="Conexion Servidor\Asignacion\SQL_Ruta.cs" />
+    <Compile Include="Conexion Servidor\Cliente\SQL_CLiente.cs" />
+    <Compile Include="Conexion Servidor\Cliente\SQL_Contacto.cs" />
+    <Compile Include="Conexion Servidor\Combustible\SQL_Combustible.cs" />
+    <Compile Include="Conexion Servidor\Contrato\SQL_Contrato.cs" />
+    <Compile Include="Conexion Servidor\Controles\SQL_Controles.cs" />
+    <Compile Include="Conexion Servidor\Cuenta\SQL_Cuenta.cs" />
+    <Compile Include="Conexion Servidor\Despacho\SQL_Operaciones.cs" />
+    <Compile Include="Conexion Servidor\Evaluacion.cs" />
+    <Compile Include="Conexion Servidor\Facturacion\SQL_Facturacion.cs" />
+    <Compile Include="Conexion Servidor\Incapacidad\SQL_Incapacidad.cs" />
+    <Compile Include="Conexion Servidor\Lector\SQL_Lector.cs" />
+    <Compile Include="Conexion Servidor\Libros\SQL_Libros.cs" />
+    <Compile Include="Conexion Servidor\Mantenimiento\SQL_Mantenimiento.cs" />
+    <Compile Include="Conexion Servidor\Nomina\SQL_Aguinaldo.cs" />
+    <Compile Include="Conexion Servidor\Nomina\SQL_Bono.cs" />
+    <Compile Include="Conexion Servidor\Nomina\SQL_Nomina.cs" />
+    <Compile Include="Conexion Servidor\Nomina\SQL_Recibo.cs" />
+    <Compile Include="Conexion Servidor\Operador\SQL_Contacto.cs" />
+    <Compile Include="Conexion Servidor\Operador\SQL_Dependiente.cs" />
+    <Compile Include="Conexion Servidor\Operador\SQL_Licencia.cs" />
+    <Compile Include="Conexion Servidor\Operador\SQL_Operador.cs" />
+    <Compile Include="Conexion Servidor\Operador\SQL_Telefono.cs" />
+    <Compile Include="Conexion Servidor\Reportes\SQL_Reportes.cs" />
+    <Compile Include="Conexion Servidor\Ruta\SQL_Ruta.cs" />
+    <Compile Include="Conexion Servidor\SegurosAseguradora\ConexionSegurosAseguradoras.cs" />
+    <Compile Include="Conexion Servidor\Servidor.cs" />
+    <Compile Include="Conexion Servidor\SQL_Conexion.cs" />
+    <Compile Include="Conexion Servidor\Unidad\SQL_Equipamiento.cs" />
+    <Compile Include="Conexion Servidor\Unidad\SQL_UnidadFotos.cs" />
+    <Compile Include="Conexion Servidor\Unidad\SQL_Unidad.cs" />
+    <Compile Include="Conexion Servidor\Usuario\SQL_Usuario.cs" />
+    <Compile Include="Conexion Servidor\Zona\SQL_Zona.cs" />
+    <Compile Include="Interfaz\Aptomedico\FormAptoMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Aptomedico\FormAptoMedico.Designer.cs">
+      <DependentUpon>FormAptoMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Aptomedico\FormReporteApto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Aptomedico\FormReporteApto.Designer.cs">
+      <DependentUpon>FormReporteApto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Aseguradora\Dato\Aseguradora.cs" />
+    <Compile Include="Interfaz\Aseguradora\Dato\SegurosAseguradoras.cs" />
+    <Compile Include="Interfaz\Aseguradora\FormAseguradoras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Aseguradora\FormAseguradoras.Designer.cs">
+      <DependentUpon>FormAseguradoras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Aseguradora\FormSeguros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Aseguradora\FormSeguros.Designer.cs">
+      <DependentUpon>FormSeguros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Asignacion\Dato\Empresa.cs" />
+    <Compile Include="Interfaz\Asignacion\FormDesasignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Asignacion\FormDesasignacion.Designer.cs">
+      <DependentUpon>FormDesasignacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Asignacion\FormModificarFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Asignacion\FormModificarFecha.Designer.cs">
+      <DependentUpon>FormModificarFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Asignacion\FormOperadorVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Asignacion\FormOperadorVehiculo.Designer.cs">
+      <DependentUpon>FormOperadorVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Caja\FormPrincipalCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Caja\FormPrincipalCaja.Designer.cs">
+      <DependentUpon>FormPrincipalCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Caja\FormResponsable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Caja\FormResponsable.Designer.cs">
+      <DependentUpon>FormResponsable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Chat\Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Chat\Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Checador\FormPrincChecador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Checador\FormPrincChecador.Designer.cs">
+      <DependentUpon>FormPrincChecador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Cliente\Dato\Contacto.cs" />
+    <Compile Include="Interfaz\Cliente\FormBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Cliente\FormBuscar.Designer.cs">
+      <DependentUpon>FormBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Cliente\FormBusquedaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Cliente\FormBusquedaCliente.Designer.cs">
+      <DependentUpon>FormBusquedaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Cliente\FormCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Cliente\FormCliente.Designer.cs">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Cliente\FormContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Cliente\FormContacto.Designer.cs">
+      <DependentUpon>FormContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Cliente\FormHistorialEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Cliente\FormHistorialEmpresa.Designer.cs">
+      <DependentUpon>FormHistorialEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Cliente\FormOrdenEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Cliente\FormOrdenEmpresas.Designer.cs">
+      <DependentUpon>FormOrdenEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Cliente\FormContratoEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Cliente\FormContratoEmpresa.Designer.cs">
+      <DependentUpon>FormContratoEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Cliente\Modificar\FormContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Cliente\Modificar\FormContacto.Designer.cs">
+      <DependentUpon>FormContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\Datos\Autorizaciones.cs" />
+    <Compile Include="Interfaz\Combustible\Datos\Coordenadas.cs" />
+    <Compile Include="Interfaz\Combustible\Datos\DatosMatriz.cs" />
+    <Compile Include="Interfaz\Combustible\Datos\Kilometrajes.cs" />
+    <Compile Include="Interfaz\Combustible\EasyTrack\FormDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\EasyTrack\FormDatos.Designer.cs">
+      <DependentUpon>FormDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormAgregarExternaOtroDia.cs" />
+    <Compile Include="Interfaz\Combustible\FormAgregarExternaOtroDia.Designer.cs">
+      <DependentUpon>FormAgregarExternaOtroDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormAgregarPruebaR.cs" />
+    <Compile Include="Interfaz\Combustible\FormAgregarPruebaR.Designer.cs">
+      <DependentUpon>FormAgregarPruebaR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormAutorizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormAutorizacion.Designer.cs">
+      <DependentUpon>FormAutorizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormAutorizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormAutorizaciones.Designer.cs">
+      <DependentUpon>FormAutorizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormCombOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormCombOperaciones.Designer.cs">
+      <DependentUpon>FormCombOperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormComentarioReporte.cs" />
+    <Compile Include="Interfaz\Combustible\FormComentarioReporte.Designer.cs">
+      <DependentUpon>FormComentarioReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormCompCombustible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormCompCombustible.Designer.cs">
+      <DependentUpon>FormCompCombustible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormContrasena.cs" />
+    <Compile Include="Interfaz\Combustible\FormContrasena.Designer.cs">
+      <DependentUpon>FormContrasena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormDatosDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormDatosDia.Designer.cs">
+      <DependentUpon>FormDatosDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormDatosExternos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormDatosExternos.Designer.cs">
+      <DependentUpon>FormDatosExternos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormEspExternas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormEspExternas.Designer.cs">
+      <DependentUpon>FormEspExternas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormExternos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormExternos.Designer.cs">
+      <DependentUpon>FormExternos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormFaltantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormFaltantes.Designer.cs">
+      <DependentUpon>FormFaltantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormFaltantesOtros.cs" />
+    <Compile Include="Interfaz\Combustible\FormFaltantesOtros.Designer.cs">
+      <DependentUpon>FormFaltantesOtros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormHistorialValidacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormHistorialValidacion.Designer.cs">
+      <DependentUpon>FormHistorialValidacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormInicializaComb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormInicializaComb.Designer.cs">
+      <DependentUpon>FormInicializaComb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormJustifica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormJustifica.Designer.cs">
+      <DependentUpon>FormJustifica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormMensajeRend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormMensajeRend.Designer.cs">
+      <DependentUpon>FormMensajeRend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormModificarMovimiento.cs" />
+    <Compile Include="Interfaz\Combustible\FormModificarMovimiento.Designer.cs">
+      <DependentUpon>FormModificarMovimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormMovimientos.cs" />
+    <Compile Include="Interfaz\Combustible\FormMovimientos.Designer.cs">
+      <DependentUpon>FormMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormNoRealizoRevizado.cs" />
+    <Compile Include="Interfaz\Combustible\FormNoRealizoRevizado.Designer.cs">
+      <DependentUpon>FormNoRealizoRevizado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormParametrosCombu.cs" />
+    <Compile Include="Interfaz\Combustible\FormParametrosCombu.Designer.cs">
+      <DependentUpon>FormParametrosCombu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormPrincCombustible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormPrincCombustible.Designer.cs">
+      <DependentUpon>FormPrincCombustible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormPrincipalComb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormPrincipalComb.Designer.cs">
+      <DependentUpon>FormPrincipalComb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormPruebaRendimiento.cs" />
+    <Compile Include="Interfaz\Combustible\FormPruebaRendimiento.Designer.cs">
+      <DependentUpon>FormPruebaRendimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormReporteBonos.cs" />
+    <Compile Include="Interfaz\Combustible\FormReporteBonos.Designer.cs">
+      <DependentUpon>FormReporteBonos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormSeguimientoP.cs" />
+    <Compile Include="Interfaz\Combustible\FormSeguimientoP.Designer.cs">
+      <DependentUpon>FormSeguimientoP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormVacios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormVacios.Designer.cs">
+      <DependentUpon>FormVacios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Combustible\FormValidacionOperaciones.cs" />
+    <Compile Include="Interfaz\Combustible\FormValidacionOperaciones.Designer.cs">
+      <DependentUpon>FormValidacionOperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Configuracion\FormConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Configuracion\FormConfiguracion.Designer.cs">
+      <DependentUpon>FormConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Configuracion\Operacion.cs" />
+    <Compile Include="Interfaz\Consultas\FormConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Consultas\FormConsultas.Designer.cs">
+      <DependentUpon>FormConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Contrato\FormDatoContrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Contrato\FormDatoContrato.Designer.cs">
+      <DependentUpon>FormDatoContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Contrato\FormHistorialContrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Contrato\FormHistorialContrato.Designer.cs">
+      <DependentUpon>FormHistorialContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Controles\Uber-Taxi\FormCancela.cs" />
+    <Compile Include="Interfaz\Controles\Uber-Taxi\FormCancela.Designer.cs">
+      <DependentUpon>FormCancela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Controles\Uber-Taxi\FormCierreUTextra.cs" />
+    <Compile Include="Interfaz\Controles\Uber-Taxi\FormCierreUTextra.Designer.cs">
+      <DependentUpon>FormCierreUTextra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Controles\Uber-Taxi\FormConfiguracion.cs" />
+    <Compile Include="Interfaz\Controles\Uber-Taxi\FormConfiguracion.Designer.cs">
+      <DependentUpon>FormConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Controles\Uber-Taxi\FormReporteUT.cs" />
+    <Compile Include="Interfaz\Controles\Uber-Taxi\FormReporteUT.Designer.cs">
+      <DependentUpon>FormReporteUT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Controles\Uber-Taxi\FormUber-Taxi.cs" />
+    <Compile Include="Interfaz\Controles\Uber-Taxi\FormUber-Taxi.Designer.cs">
+      <DependentUpon>FormUber-Taxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Controles\Uber-Taxi\FormUber-TaxiExtra.cs" />
+    <Compile Include="Interfaz\Controles\Uber-Taxi\FormUber-TaxiExtra.Designer.cs">
+      <DependentUpon>FormUber-TaxiExtra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Facturacion\FormCancelaFactura.cs" />
+    <Compile Include="Interfaz\Facturacion\FormCancelaFactura.Designer.cs">
+      <DependentUpon>FormCancelaFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Facturacion\FormCobroFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Facturacion\FormCobroFactura.Designer.cs">
+      <DependentUpon>FormCobroFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Facturacion\FormControl.cs" />
+    <Compile Include="Interfaz\Facturacion\FormControl.Designer.cs">
+      <DependentUpon>FormControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Facturacion\FormFactHenniges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Facturacion\FormFactHenniges.Designer.cs">
+      <DependentUpon>FormFactHenniges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Facturacion\FormFacturar.cs" />
+    <Compile Include="Interfaz\Facturacion\FormFacturar.Designer.cs">
+      <DependentUpon>FormFacturar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Facturacion\FormPagada.cs" />
+    <Compile Include="Interfaz\Facturacion\FormPagada.Designer.cs">
+      <DependentUpon>FormPagada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Facturacion\FormPreciosF.cs" />
+    <Compile Include="Interfaz\Facturacion\FormPreciosF.Designer.cs">
+      <DependentUpon>FormPreciosF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\FormMensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\FormMensaje.Designer.cs">
+      <DependentUpon>FormMensaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Incapacidad\FormIncapacidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Incapacidad\FormIncapacidades.Designer.cs">
+      <DependentUpon>FormIncapacidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Lector\FormCapture_Stream.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Lector\FormCapture_Stream.Designer.cs">
+      <DependentUpon>FormCapture_Stream.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Lector\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Lector\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Lector\FormReader_Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Lector\FormReader_Select.Designer.cs">
+      <DependentUpon>FormReader_Select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Lector\FormVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Lector\FormVerification.Designer.cs">
+      <DependentUpon>FormVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormCabiosValidacion.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormCabiosValidacion.Designer.cs">
+      <DependentUpon>FormCabiosValidacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormCambiarAcuerdo.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormCambiarAcuerdo.Designer.cs">
+      <DependentUpon>FormCambiarAcuerdo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormCancelacionCotizacion.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormCancelacionCotizacion.Designer.cs">
+      <DependentUpon>FormCancelacionCotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormCancelarVehiculo.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormCancelarVehiculo.Designer.cs">
+      <DependentUpon>FormCancelarVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormConfirmarServicio.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormConfirmarServicio.Designer.cs">
+      <DependentUpon>FormConfirmarServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormConfirmaServicio.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormConfirmaServicio.Designer.cs">
+      <DependentUpon>FormConfirmaServicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormEncuestaPost.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormEncuestaPost.Designer.cs">
+      <DependentUpon>FormEncuestaPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormEncuestaPost2.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormEncuestaPost2.Designer.cs">
+      <DependentUpon>FormEncuestaPost2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormEnviarCorreo.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormEnviarCorreo.Designer.cs">
+      <DependentUpon>FormEnviarCorreo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\formParametro.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\formParametro.Designer.cs">
+      <DependentUpon>formParametro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormParametros.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormParametros.Designer.cs">
+      <DependentUpon>FormParametros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormReportes.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormReportes.Designer.cs">
+      <DependentUpon>FormReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormValidacionServicios.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Complementos Libro\FormValidacionServicios.Designer.cs">
+      <DependentUpon>FormValidacionServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Dato\datosViajes.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Dato\ViajesEspeciales.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\FormDetalleFactura.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\FormDetalleFactura.Designer.cs">
+      <DependentUpon>FormDetalleFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\FormLibroViajes.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\FormLibroViajes.Designer.cs">
+      <DependentUpon>FormLibroViajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormAnticipos.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormAnticipos.Designer.cs">
+      <DependentUpon>FormAnticipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormAvisoFacturaP.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormAvisoFacturaP.Designer.cs">
+      <DependentUpon>FormAvisoFacturaP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormCambioPrecioVehiculo.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormCambioPrecioVehiculo.Designer.cs">
+      <DependentUpon>FormCambioPrecioVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormCobroValidacion.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormCobroValidacion.Designer.cs">
+      <DependentUpon>FormCobroValidacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormContribuyentes.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormContribuyentes.Designer.cs">
+      <DependentUpon>FormContribuyentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormControlPagos.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormControlPagos.Designer.cs">
+      <DependentUpon>FormControlPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormGastosServicios.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormGastosServicios.Designer.cs">
+      <DependentUpon>FormGastosServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormIncobrable.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormIncobrable.Designer.cs">
+      <DependentUpon>FormIncobrable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormIngresaFactura.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormIngresaFactura.Designer.cs">
+      <DependentUpon>FormIngresaFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormInsertarCobro.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormInsertarCobro.Designer.cs">
+      <DependentUpon>FormInsertarCobro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormModificaAnticipo.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormModificaAnticipo.Designer.cs">
+      <DependentUpon>FormModificaAnticipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormModificarTipoP.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormModificarTipoP.Designer.cs">
+      <DependentUpon>FormModificarTipoP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormNuevoAnticipo.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormNuevoAnticipo.Designer.cs">
+      <DependentUpon>FormNuevoAnticipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormOrdenFactura.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormOrdenFactura.Designer.cs">
+      <DependentUpon>FormOrdenFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormPagoCobroEspecial.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormPagoCobroEspecial.Designer.cs">
+      <DependentUpon>FormPagoCobroEspecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormPagos.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormPagos.Designer.cs">
+      <DependentUpon>FormPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormReportesPrivilegiosPagos.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormReportesPrivilegiosPagos.Designer.cs">
+      <DependentUpon>FormReportesPrivilegiosPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormVerOperador.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\FormVerOperador.Designer.cs">
+      <DependentUpon>FormVerOperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\PrivilegiosPagos.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Pagos\PrivilegiosPagos.Designer.cs">
+      <DependentUpon>PrivilegiosPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Validacion Final\FormCompletaSaldo.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Validacion Final\FormCompletaSaldo.Designer.cs">
+      <DependentUpon>FormCompletaSaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Validacion Final\FormRecuperado.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Validacion Final\FormRecuperado.Designer.cs">
+      <DependentUpon>FormRecuperado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro Nuevo\Validacion Final\FormValidarServicios.cs" />
+    <Compile Include="Interfaz\Libro Nuevo\Validacion Final\FormValidarServicios.Designer.cs">
+      <DependentUpon>FormValidarServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro\Dato\datosViajes.cs" />
+    <Compile Include="Interfaz\Libro\Dato\ViajesEspeciales.cs" />
+    <Compile Include="Interfaz\Libro\FormAnticipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormAnticipos.Designer.cs">
+      <DependentUpon>FormAnticipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormAsignacionCobro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormAsignacionCobro.Designer.cs">
+      <DependentUpon>FormAsignacionCobro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormAsignOperadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormAsignOperadores.Designer.cs">
+      <DependentUpon>FormAsignOperadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormAuditacion.cs" />
+    <Compile Include="Interfaz\Libro\FormAuditacion.Designer.cs">
+      <DependentUpon>FormAuditacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormCambiosAsiganacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormCambiosAsiganacion.Designer.cs">
+      <DependentUpon>FormCambiosAsiganacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormDatosFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormDatosFactura.Designer.cs">
+      <DependentUpon>FormDatosFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormFacturaEsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormFacturaEsp.Designer.cs">
+      <DependentUpon>FormFacturaEsp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormIngresoRapido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormIngresoRapido.Designer.cs">
+      <DependentUpon>FormIngresoRapido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormMixto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormMixto.Designer.cs">
+      <DependentUpon>FormMixto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormReporteVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormReporteVentas.Designer.cs">
+      <DependentUpon>FormReporteVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormTerminoFact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormTerminoFact.Designer.cs">
+      <DependentUpon>FormTerminoFact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormValidacionEsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormValidacionEsp.Designer.cs">
+      <DependentUpon>FormValidacionEsp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormValidaFact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Libro\FormValidaFact.Designer.cs">
+      <DependentUpon>FormValidaFact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Libro\LibroViajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Libro\LibroViajes.Designer.cs">
+      <DependentUpon>LibroViajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormAgrupación.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormAgrupación.Designer.cs">
+      <DependentUpon>FormAgrupación.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormEntrada.Designer.cs">
+      <DependentUpon>FormEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormExistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormExistencia.Designer.cs">
+      <DependentUpon>FormExistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormIntervencion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormIntervencion.Designer.cs">
+      <DependentUpon>FormIntervencion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormMovimientos.Designer.cs">
+      <DependentUpon>FormMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormOrdenCompra.Designer.cs">
+      <DependentUpon>FormOrdenCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormProducto.Designer.cs">
+      <DependentUpon>FormProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormProveedores.Designer.cs">
+      <DependentUpon>FormProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormRegistrosComp.cs" />
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormRegistrosComp.Designer.cs">
+      <DependentUpon>FormRegistrosComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\FormSalida.Designer.cs">
+      <DependentUpon>FormSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormCancelarOrdenTrabajo.cs" />
+    <Compile Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormCancelarOrdenTrabajo.Designer.cs">
+      <DependentUpon>FormCancelarOrdenTrabajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormOrdenTrabajoCambiarSalida.cs" />
+    <Compile Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormOrdenTrabajoCambiarSalida.Designer.cs">
+      <DependentUpon>FormOrdenTrabajoCambiarSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormOrdenTrabajoEntrada.cs" />
+    <Compile Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormOrdenTrabajoEntrada.Designer.cs">
+      <DependentUpon>FormOrdenTrabajoEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormOrdenTrabajoFallasReportadas.cs" />
+    <Compile Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormOrdenTrabajoFallasReportadas.Designer.cs">
+      <DependentUpon>FormOrdenTrabajoFallasReportadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormOrdenTrabajoModificaMecanico.cs" />
+    <Compile Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormOrdenTrabajoModificaMecanico.Designer.cs">
+      <DependentUpon>FormOrdenTrabajoModificaMecanico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormOrdenTrabajoSalida.cs" />
+    <Compile Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormOrdenTrabajoSalida.Designer.cs">
+      <DependentUpon>FormOrdenTrabajoSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormReprogramarFallas.cs" />
+    <Compile Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormReprogramarFallas.Designer.cs">
+      <DependentUpon>FormReprogramarFallas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\FormAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\FormAlmacen.Designer.cs">
+      <DependentUpon>FormAlmacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\FormEstadoUnidad.cs" />
+    <Compile Include="Interfaz\Mantenimiento\FormEstadoUnidad.Designer.cs">
+      <DependentUpon>FormEstadoUnidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\FormESvehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\FormESvehiculos.Designer.cs">
+      <DependentUpon>FormESvehiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\FormMantenimientosPreventivos.cs" />
+    <Compile Include="Interfaz\Mantenimiento\FormMantenimientosPreventivos.Designer.cs">
+      <DependentUpon>FormMantenimientosPreventivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\FormOrdenTrabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Mantenimiento\FormOrdenTrabajo.Designer.cs">
+      <DependentUpon>FormOrdenTrabajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Monitoreo\FormDetalleLicencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Monitoreo\FormDetalleLicencia.Designer.cs">
+      <DependentUpon>FormDetalleLicencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Monitoreo\FormLicencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Monitoreo\FormLicencia.Designer.cs">
+      <DependentUpon>FormLicencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Monitoreo\FormMonitoreoContrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Monitoreo\FormMonitoreoContrato.Designer.cs">
+      <DependentUpon>FormMonitoreoContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Monitoreo\ReporteLicencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Monitoreo\ReporteLicencia.Designer.cs">
+      <DependentUpon>ReporteLicencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Facturacion\FormFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Facturacion\FormFacturacion.Designer.cs">
+      <DependentUpon>FormFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Anticipos\FormHistorialTotalizado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Anticipos\FormHistorialTotalizado.Designer.cs">
+      <DependentUpon>FormHistorialTotalizado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Anticipos\FormModificarFechaAnticipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Anticipos\FormModificarFechaAnticipo.Designer.cs">
+      <DependentUpon>FormModificarFechaAnticipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Anticipos\FormMotivoEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Anticipos\FormMotivoEliminar.Designer.cs">
+      <DependentUpon>FormMotivoEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Anticipos\FormPrestamoTotalizado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Anticipos\FormPrestamoTotalizado.Designer.cs">
+      <DependentUpon>FormPrestamoTotalizado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Anticipos\FormPrincAnticipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Anticipos\FormPrincAnticipos.Designer.cs">
+      <DependentUpon>FormPrincAnticipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Anticipos\FormTaxi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Anticipos\FormTaxi.Designer.cs">
+      <DependentUpon>FormTaxi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Anticipos\FormTaxiPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Anticipos\FormTaxiPago.Designer.cs">
+      <DependentUpon>FormTaxiPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Bono\FormBonificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Bono\FormBonificacion.Designer.cs">
+      <DependentUpon>FormBonificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Bono\FormBonos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Bono\FormBonos.Designer.cs">
+      <DependentUpon>FormBonos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Bono\FormPerdida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Bono\FormPerdida.Designer.cs">
+      <DependentUpon>FormPerdida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Dato\Nomina.cs" />
+    <Compile Include="Interfaz\Nomina\Dato\ViajeEmpresarial.cs" />
+    <Compile Include="Interfaz\Nomina\Especiales\Finanzas\Anticipos.cs" />
+    <Compile Include="Interfaz\Nomina\Especiales\Finanzas\DatosPrin.cs" />
+    <Compile Include="Interfaz\Nomina\Especiales\Finanzas\FormAnticipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\Finanzas\FormAnticipos.Designer.cs">
+      <DependentUpon>FormAnticipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\Finanzas\FormCompleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\Finanzas\FormCompleta.Designer.cs">
+      <DependentUpon>FormCompleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\Finanzas\FormDatosIncobrable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\Finanzas\FormDatosIncobrable.Designer.cs">
+      <DependentUpon>FormDatosIncobrable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\Finanzas\FormPendientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\Finanzas\FormPendientes.Designer.cs">
+      <DependentUpon>FormPendientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\Finanzas\FormReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\Finanzas\FormReporte.Designer.cs">
+      <DependentUpon>FormReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\Finanzas\FormXCobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\Finanzas\FormXCobrar.Designer.cs">
+      <DependentUpon>FormXCobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\Finanzas\Validado.cs" />
+    <Compile Include="Interfaz\Nomina\Especiales\FormCabiosReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormCabiosReg.Designer.cs">
+      <DependentUpon>FormCabiosReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormCobroCasetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormCobroCasetas.Designer.cs">
+      <DependentUpon>FormCobroCasetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormCuentasEsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormCuentasEsp.Designer.cs">
+      <DependentUpon>FormCuentasEsp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormElimina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormElimina.Designer.cs">
+      <DependentUpon>FormElimina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormFiltros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormFiltros.Designer.cs">
+      <DependentUpon>FormFiltros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormFormaPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormFormaPago.Designer.cs">
+      <DependentUpon>FormFormaPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormFormaPago2.cs" />
+    <Compile Include="Interfaz\Nomina\Especiales\FormFormaPago2.Designer.cs">
+      <DependentUpon>FormFormaPago2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormIngresoFact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormIngresoFact.Designer.cs">
+      <DependentUpon>FormIngresoFact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormMalFlujo.cs" />
+    <Compile Include="Interfaz\Nomina\Especiales\FormMalFlujo.Designer.cs">
+      <DependentUpon>FormMalFlujo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormPrivilegioCobro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormPrivilegioCobro.Designer.cs">
+      <DependentUpon>FormPrivilegioCobro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormRango.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormRango.Designer.cs">
+      <DependentUpon>FormRango.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormTipoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormTipoPago.Designer.cs">
+      <DependentUpon>FormTipoPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormTotalFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormTotalFecha.Designer.cs">
+      <DependentUpon>FormTotalFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormXcobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Especiales\FormXcobrar.Designer.cs">
+      <DependentUpon>FormXcobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\FormEfectivoCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\FormEfectivoCheque.Designer.cs">
+      <DependentUpon>FormEfectivoCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\FormImportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\FormImportes.Designer.cs">
+      <DependentUpon>FormImportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\FormImpuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\FormImpuestos.Designer.cs">
+      <DependentUpon>FormImpuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\FormIngresoExtra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\FormIngresoExtra.Designer.cs">
+      <DependentUpon>FormIngresoExtra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\FormNomina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\FormNomina.Designer.cs">
+      <DependentUpon>FormNomina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\FormOperadorExterno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\FormOperadorExterno.Designer.cs">
+      <DependentUpon>FormOperadorExterno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\FormReporteNomina.cs" />
+    <Compile Include="Interfaz\Nomina\FormReporteNomina.Designer.cs">
+      <DependentUpon>FormReporteNomina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Nomina Fiscal\FormCuentaBancaria.cs" />
+    <Compile Include="Interfaz\Nomina\Nomina Fiscal\FormCuentaBancaria.Designer.cs">
+      <DependentUpon>FormCuentaBancaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Nomina Fiscal\FormModificaOperador.cs" />
+    <Compile Include="Interfaz\Nomina\Nomina Fiscal\FormModificaOperador.Designer.cs">
+      <DependentUpon>FormModificaOperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Nomina Fiscal\FormNominaFiscal.cs" />
+    <Compile Include="Interfaz\Nomina\Nomina Fiscal\FormNominaFiscal.Designer.cs">
+      <DependentUpon>FormNominaFiscal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Nomina Fiscal\FormSueldoReal.cs" />
+    <Compile Include="Interfaz\Nomina\Nomina Fiscal\FormSueldoReal.Designer.cs">
+      <DependentUpon>FormSueldoReal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Nomina Fiscal\FormValidaCuenta.cs" />
+    <Compile Include="Interfaz\Nomina\Nomina Fiscal\FormValidaCuenta.Designer.cs">
+      <DependentUpon>FormValidaCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Recibo\FormRecibo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Recibo\FormRecibo.Designer.cs">
+      <DependentUpon>FormRecibo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Recibo\FormSueldos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\Recibo\FormSueldos.Designer.cs">
+      <DependentUpon>FormSueldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\SinPrecio\FormViajesSinPrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Nomina\SinPrecio\FormViajesSinPrecio.Designer.cs">
+      <DependentUpon>FormViajesSinPrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Notificaciones\FormNCumpleanos.cs" />
+    <Compile Include="Interfaz\Notificaciones\FormNCumpleanos.Designer.cs">
+      <DependentUpon>FormNCumpleanos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\Dato\Apoyo.cs" />
+    <Compile Include="Interfaz\Operaciones\Dato\Busqueda.cs" />
+    <Compile Include="Interfaz\Operaciones\Dato\Especial.cs" />
+    <Compile Include="Interfaz\Operaciones\Dato\msjGerencial.cs" />
+    <Compile Include="Interfaz\Operaciones\Dato\msjGral.cs" />
+    <Compile Include="Interfaz\Operaciones\Dato\msjRuta.cs" />
+    <Compile Include="Interfaz\Operaciones\Dato\Operador.cs" />
+    <Compile Include="Interfaz\Operaciones\Dato\OrdenEmpresas.cs" />
+    <Compile Include="Interfaz\Operaciones\Dato\Ruta.cs" />
+    <Compile Include="Interfaz\Operaciones\Dato\RutasEspecial.cs" />
+    <Compile Include="Interfaz\Operaciones\Dato\Unidades.cs" />
+    <Compile Include="Interfaz\Operaciones\Despacho\Conteo.cs" />
+    <Compile Include="Interfaz\Operaciones\Despacho\FormPrincOperadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\Despacho\FormPrincOperadores.Designer.cs">
+      <DependentUpon>FormPrincOperadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\Despacho\FormProgramaRecados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\Despacho\FormProgramaRecados.Designer.cs">
+      <DependentUpon>FormProgramaRecados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\Despacho\FormRecadoOperador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\Despacho\FormRecadoOperador.Designer.cs">
+      <DependentUpon>FormRecadoOperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\Despacho\FormRecados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\Despacho\FormRecados.Designer.cs">
+      <DependentUpon>FormRecados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormAddDelRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormAddDelRutas.Designer.cs">
+      <DependentUpon>FormAddDelRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormAddRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormAddRutas.Designer.cs">
+      <DependentUpon>FormAddRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormApoyos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormApoyos.Designer.cs">
+      <DependentUpon>FormApoyos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormCancelCambio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormCancelCambio.Designer.cs">
+      <DependentUpon>FormCancelCambio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormCancelEsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormCancelEsp.Designer.cs">
+      <DependentUpon>FormCancelEsp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormComentario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormComentario.Designer.cs">
+      <DependentUpon>FormComentario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormComentarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormComentarios.Designer.cs">
+      <DependentUpon>FormComentarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormDatosEspecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormDatosEspecial.Designer.cs">
+      <DependentUpon>FormDatosEspecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormDatosOperador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormDatosOperador.Designer.cs">
+      <DependentUpon>FormDatosOperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormEmpresasOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormEmpresasOperaciones.Designer.cs">
+      <DependentUpon>FormEmpresasOperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormFaltantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormFaltantes.Designer.cs">
+      <DependentUpon>FormFaltantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormGloboMsj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormGloboMsj.Designer.cs">
+      <DependentUpon>FormGloboMsj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormListaSueldos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormListaSueldos.Designer.cs">
+      <DependentUpon>FormListaSueldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormMensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormMensaje.Designer.cs">
+      <DependentUpon>FormMensaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormModificaOperador.cs" />
+    <Compile Include="Interfaz\Operaciones\FormModificaOperador.Designer.cs">
+      <DependentUpon>FormModificaOperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormMsjDatosOperador.cs" />
+    <Compile Include="Interfaz\Operaciones\FormMsjDatosOperador.Designer.cs">
+      <DependentUpon>FormMsjDatosOperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormMsjGral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormMsjGral.Designer.cs">
+      <DependentUpon>FormMsjGral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormNuevaRuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormNuevaRuta.Designer.cs">
+      <DependentUpon>FormNuevaRuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormOperacionesOperador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormOperacionesOperador.Designer.cs">
+      <DependentUpon>FormOperacionesOperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormOperadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormOperadores.Designer.cs">
+      <DependentUpon>FormOperadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormOperadorEsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormOperadorEsp.Designer.cs">
+      <DependentUpon>FormOperadorEsp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormOrdenEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormOrdenEmpresas.Designer.cs">
+      <DependentUpon>FormOrdenEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormPasajeros.cs" />
+    <Compile Include="Interfaz\Operaciones\FormPasajeros.Designer.cs">
+      <DependentUpon>FormPasajeros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormPrincEspeciales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormPrincEspeciales.Designer.cs">
+      <DependentUpon>FormPrincEspeciales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormPrin_Empresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormPrin_Empresas.Designer.cs">
+      <DependentUpon>FormPrin_Empresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormPruebaRendimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormPruebaRendimiento.Designer.cs">
+      <DependentUpon>FormPruebaRendimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormPruebasRend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormPruebasRend.Designer.cs">
+      <DependentUpon>FormPruebasRend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormReconRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormReconRutas.Designer.cs">
+      <DependentUpon>FormReconRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormRefRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormRefRutas.Designer.cs">
+      <DependentUpon>FormRefRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormRutasCercanas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormRutasCercanas.Designer.cs">
+      <DependentUpon>FormRutasCercanas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormSuplente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\FormSuplente.Designer.cs">
+      <DependentUpon>FormSuplente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\Turno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operaciones\Turno.Designer.cs">
+      <DependentUpon>Turno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\CardexAdmin\FormCardexAdmin.cs" />
+    <Compile Include="Interfaz\Operador\CardexAdmin\FormCardexAdmin.Designer.cs">
+      <DependentUpon>FormCardexAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Dato\Candidatos.cs" />
+    <Compile Include="Interfaz\Operador\Dato\Licencia.cs" />
+    <Compile Include="Interfaz\Operador\Dato\Reconocimiento.cs" />
+    <Compile Include="Interfaz\Operador\FormBusquedaAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormBusquedaAdmin.Designer.cs">
+      <DependentUpon>FormBusquedaAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormBusquedaOperador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormBusquedaOperador.Designer.cs">
+      <DependentUpon>FormBusquedaOperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormContacto.Designer.cs">
+      <DependentUpon>FormContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormCuentaBancaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormCuentaBancaria.Designer.cs">
+      <DependentUpon>FormCuentaBancaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormDependiente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormDependiente.Designer.cs">
+      <DependentUpon>FormDependiente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormDetalleBaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormDetalleBaja.Designer.cs">
+      <DependentUpon>FormDetalleBaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormExperiencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormExperiencia.Designer.cs">
+      <DependentUpon>FormExperiencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormLicencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormLicencia.Designer.cs">
+      <DependentUpon>FormLicencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormModificaOp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormModificaOp.Designer.cs">
+      <DependentUpon>FormModificaOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormOperador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormOperador.Designer.cs">
+      <DependentUpon>FormOperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormOrdenCaritas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormOrdenCaritas.Designer.cs">
+      <DependentUpon>FormOrdenCaritas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormPuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormPuesto.Designer.cs">
+      <DependentUpon>FormPuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormTelefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\FormTelefono.Designer.cs">
+      <DependentUpon>FormTelefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Modificar\FormContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Modificar\FormContacto.Designer.cs">
+      <DependentUpon>FormContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Modificar\FormDependiente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Modificar\FormDependiente.Designer.cs">
+      <DependentUpon>FormDependiente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Modificar\FormLicencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Modificar\FormLicencia.Designer.cs">
+      <DependentUpon>FormLicencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Modificar\FormTelefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Modificar\FormTelefono.Designer.cs">
+      <DependentUpon>FormTelefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Operacion.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormApto.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormApto.Designer.cs">
+      <DependentUpon>FormApto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormCancelaLlamada.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormCancelaLlamada.Designer.cs">
+      <DependentUpon>FormCancelaLlamada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormCitas.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormCitas.Designer.cs">
+      <DependentUpon>FormCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormCitaWhatsapp.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormCitaWhatsapp.Designer.cs">
+      <DependentUpon>FormCitaWhatsapp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormContratacion.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormContratacion.Designer.cs">
+      <DependentUpon>FormContratacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormFoto.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormFoto.Designer.cs">
+      <DependentUpon>FormFoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormImagen.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormImagen.Designer.cs">
+      <DependentUpon>FormImagen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormLicenciasAjuste.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormLicenciasAjuste.Designer.cs">
+      <DependentUpon>FormLicenciasAjuste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormLlamada.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormLlamada.Designer.cs">
+      <DependentUpon>FormLlamada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormMensajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormMensajes.Designer.cs">
+      <DependentUpon>FormMensajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormMotivoBT.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormMotivoBT.Designer.cs">
+      <DependentUpon>FormMotivoBT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormParametros.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormParametros.Designer.cs">
+      <DependentUpon>FormParametros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormRechazar.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormRechazar.Designer.cs">
+      <DependentUpon>FormRechazar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormReCita.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormReCita.Designer.cs">
+      <DependentUpon>FormReCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormRegistar.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormRegistar.Designer.cs">
+      <DependentUpon>FormRegistar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormTelefonos.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormTelefonos.Designer.cs">
+      <DependentUpon>FormTelefonos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormValidaCitas.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormValidaCitas.Designer.cs">
+      <DependentUpon>FormValidaCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormValidaDatos.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormValidaDatos.Designer.cs">
+      <DependentUpon>FormValidaDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormZonasFuentes.cs" />
+    <Compile Include="Interfaz\Operador\Pre-Seleccion\FormZonasFuentes.Designer.cs">
+      <DependentUpon>FormZonasFuentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\Cardex\FormOtros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\Cardex\FormOtros.Designer.cs">
+      <DependentUpon>FormOtros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\Cardex\FormOtros2.cs" />
+    <Compile Include="Interfaz\Reportes\Cardex\FormOtros2.Designer.cs">
+      <DependentUpon>FormOtros2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\Cardex\FormSeguimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\Cardex\FormSeguimiento.Designer.cs">
+      <DependentUpon>FormSeguimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\ClassDatos.cs" />
+    <Compile Include="Interfaz\Reportes\Dato\Conteo.cs" />
+    <Compile Include="Interfaz\Reportes\Dato\FormRutasFaltantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\Dato\FormRutasFaltantes.Designer.cs">
+      <DependentUpon>FormRutasFaltantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormAvisoBajas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormAvisoBajas.Designer.cs">
+      <DependentUpon>FormAvisoBajas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormCardex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormCardex.Designer.cs">
+      <DependentUpon>FormCardex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormCardexCoordinador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormCardexCoordinador.Designer.cs">
+      <DependentUpon>FormCardexCoordinador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormIncidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormIncidencias.Designer.cs">
+      <DependentUpon>FormIncidencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormReconocimientoRuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormReconocimientoRuta.Designer.cs">
+      <DependentUpon>FormReconocimientoRuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormReporteBonificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormReporteBonificaciones.Designer.cs">
+      <DependentUpon>FormReporteBonificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormReporteCombustible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormReporteCombustible.Designer.cs">
+      <DependentUpon>FormReporteCombustible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormReporteGerencial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormReporteGerencial.Designer.cs">
+      <DependentUpon>FormReporteGerencial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormReporteNomina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormReporteNomina.Designer.cs">
+      <DependentUpon>FormReporteNomina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormReporteOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormReporteOperaciones.Designer.cs">
+      <DependentUpon>FormReporteOperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormReporteRutas.cs" />
+    <Compile Include="Interfaz\Reportes\FormReporteRutas.Designer.cs">
+      <DependentUpon>FormReporteRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormReporteRutasExtras.cs" />
+    <Compile Include="Interfaz\Reportes\FormReporteRutasExtras.Designer.cs">
+      <DependentUpon>FormReporteRutasExtras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormReportesAltaBajaOperador.cs" />
+    <Compile Include="Interfaz\Reportes\FormReportesAltaBajaOperador.Designer.cs">
+      <DependentUpon>FormReportesAltaBajaOperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormReporteViajesDespacho.cs" />
+    <Compile Include="Interfaz\Reportes\FormReporteViajesDespacho.Designer.cs">
+      <DependentUpon>FormReporteViajesDespacho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormViajesExternos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormViajesExternos.Designer.cs">
+      <DependentUpon>FormViajesExternos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Reportes\FormViajesOperador.cs" />
+    <Compile Include="Interfaz\Reportes\FormViajesOperador.Designer.cs">
+      <DependentUpon>FormViajesOperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Ruta\Complemento Cambio ruta\FormExtraANormal.cs" />
+    <Compile Include="Interfaz\Ruta\Complemento Cambio ruta\FormExtraANormal.Designer.cs">
+      <DependentUpon>FormExtraANormal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Ruta\FormBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Ruta\FormBuscar.Designer.cs">
+      <DependentUpon>FormBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Ruta\FormBusquedaRuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Ruta\FormBusquedaRuta.Designer.cs">
+      <DependentUpon>FormBusquedaRuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Ruta\FormProgramaRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Ruta\FormProgramaRutas.designer.cs">
+      <DependentUpon>FormProgramaRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Ruta\FormRuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Ruta\FormRuta.Designer.cs">
+      <DependentUpon>FormRuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Ruta\FormRutasExtras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Ruta\FormRutasExtras.Designer.cs">
+      <DependentUpon>FormRutasExtras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Ruta\FormTipoRuta.cs" />
+    <Compile Include="Interfaz\Ruta\FormTipoRuta.Designer.cs">
+      <DependentUpon>FormTipoRuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Unidad\Dato\Equipamiento.cs" />
+    <Compile Include="Interfaz\Unidad\FormBusquedaUnidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Unidad\FormBusquedaUnidad.Designer.cs">
+      <DependentUpon>FormBusquedaUnidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Unidad\FormEquipamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Unidad\FormEquipamiento.Designer.cs">
+      <DependentUpon>FormEquipamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Unidad\FormFotos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Unidad\FormFotos.Designer.cs">
+      <DependentUpon>FormFotos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Unidad\FormOperadorVehiculoHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Unidad\FormOperadorVehiculoHistorial.Designer.cs">
+      <DependentUpon>FormOperadorVehiculoHistorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Unidad\FormPlacasRevision.cs" />
+    <Compile Include="Interfaz\Unidad\FormPlacasRevision.Designer.cs">
+      <DependentUpon>FormPlacasRevision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Unidad\FormUnidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Unidad\FormUnidad.Designer.cs">
+      <DependentUpon>FormUnidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Unidad\FotografiaU.cs" />
+    <Compile Include="Interfaz\Unidad\Gestoria\FormParametrosGestoria.cs" />
+    <Compile Include="Interfaz\Unidad\Gestoria\FormParametrosGestoria.Designer.cs">
+      <DependentUpon>FormParametrosGestoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Unidad\Gestoria\Gestoria.cs" />
+    <Compile Include="Interfaz\Unidad\Gestoria\Gestoria.Designer.cs">
+      <DependentUpon>Gestoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Unidad\Operacion.cs" />
+    <Compile Include="Interfaz\Usuario\FormBusquedaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Usuario\FormBusquedaUsuario.Designer.cs">
+      <DependentUpon>FormBusquedaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Usuario\FormDetallePrivilegio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Usuario\FormDetallePrivilegio.Designer.cs">
+      <DependentUpon>FormDetallePrivilegio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Usuario\FormModificarCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Usuario\FormModificarCuenta.Designer.cs">
+      <DependentUpon>FormModificarCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Usuario\FormUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Usuario\FormUsuario.Designer.cs">
+      <DependentUpon>FormUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Usuario\Operacion.cs" />
+    <Compile Include="Interfaz\Zona\Dato\Zona.cs" />
+    <Compile Include="Interfaz\Zona\FormAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Zona\FormAgregar.Designer.cs">
+      <DependentUpon>FormAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Zona\FormRelacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Zona\FormRelacion.Designer.cs">
+      <DependentUpon>FormRelacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Zona\FormRemover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Zona\FormRemover.Designer.cs">
+      <DependentUpon>FormRemover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Zona\FormZona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Zona\FormZona.Designer.cs">
+      <DependentUpon>FormZona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LAR.Designer.cs">
+      <DependentUpon>LAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proceso\AutoCompleClass.cs" />
+    <Compile Include="Proceso\Excel.cs" />
+    <Compile Include="Proceso\FormatosPDF.cs" />
+    <Compile Include="Proceso\LimpiarCampo\LimpiarAseguradora.cs" />
+    <Compile Include="Proceso\LimpiarCampo\SegurosAseguradoras.cs" />
+    <Compile Include="Proceso\Numalet.cs" />
+    <Compile Include="Proceso\PDF.cs" />
+    <Compile Include="Proceso\PDFFooter.cs" />
+    <Compile Include="Proceso\PDFooterFactura.cs" />
+    <Compile Include="Proceso\PDFooterVentas.cs" />
+    <Compile Include="Proceso\RedimensionarImagen.cs" />
+    <Compile Include="Proceso\Semana.cs" />
+    <Compile Include="Proceso\ValidarCampo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Interfaz\Aptomedico\FormAptoMedico.resx">
+      <DependentUpon>FormAptoMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Aptomedico\FormReporteApto.resx">
+      <DependentUpon>FormReporteApto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Aseguradora\FormAseguradoras.resx">
+      <DependentUpon>FormAseguradoras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Aseguradora\FormSeguros.resx">
+      <DependentUpon>FormSeguros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Asignacion\FormDesasignacion.resx">
+      <DependentUpon>FormDesasignacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Asignacion\FormModificarFecha.resx">
+      <DependentUpon>FormModificarFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Asignacion\FormOperadorVehiculo.resx">
+      <DependentUpon>FormOperadorVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Caja\FormPrincipalCaja.resx">
+      <DependentUpon>FormPrincipalCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Caja\FormResponsable.resx">
+      <DependentUpon>FormResponsable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Chat\Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Checador\FormPrincChecador.resx">
+      <DependentUpon>FormPrincChecador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Cliente\FormBuscar.resx">
+      <DependentUpon>FormBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Cliente\FormBusquedaCliente.resx">
+      <DependentUpon>FormBusquedaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Cliente\FormCliente.resx">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Cliente\FormContacto.resx">
+      <DependentUpon>FormContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Cliente\FormHistorialEmpresa.resx">
+      <DependentUpon>FormHistorialEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Cliente\FormOrdenEmpresas.resx">
+      <DependentUpon>FormOrdenEmpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Cliente\FormContratoEmpresa.resx">
+      <DependentUpon>FormContratoEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Cliente\Modificar\FormContacto.resx">
+      <DependentUpon>FormContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\EasyTrack\FormDatos.resx">
+      <DependentUpon>FormDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormAgregarExternaOtroDia.resx">
+      <DependentUpon>FormAgregarExternaOtroDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormAgregarPruebaR.resx">
+      <DependentUpon>FormAgregarPruebaR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormAutorizacion.resx">
+      <DependentUpon>FormAutorizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormAutorizaciones.resx">
+      <DependentUpon>FormAutorizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormCombOperaciones.resx">
+      <DependentUpon>FormCombOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormComentarioReporte.resx">
+      <DependentUpon>FormComentarioReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormCompCombustible.resx">
+      <DependentUpon>FormCompCombustible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormContrasena.resx">
+      <DependentUpon>FormContrasena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormDatosDia.resx">
+      <DependentUpon>FormDatosDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormDatosExternos.resx">
+      <DependentUpon>FormDatosExternos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormEspExternas.resx">
+      <DependentUpon>FormEspExternas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormExternos.resx">
+      <DependentUpon>FormExternos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormFaltantes.resx">
+      <DependentUpon>FormFaltantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormFaltantesOtros.resx">
+      <DependentUpon>FormFaltantesOtros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormHistorialValidacion.resx">
+      <DependentUpon>FormHistorialValidacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormInicializaComb.resx">
+      <DependentUpon>FormInicializaComb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormJustifica.resx">
+      <DependentUpon>FormJustifica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormMensajeRend.resx">
+      <DependentUpon>FormMensajeRend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormModificarMovimiento.resx">
+      <DependentUpon>FormModificarMovimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormMovimientos.resx">
+      <DependentUpon>FormMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormNoRealizoRevizado.resx">
+      <DependentUpon>FormNoRealizoRevizado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormParametrosCombu.resx">
+      <DependentUpon>FormParametrosCombu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormPrincCombustible.resx">
+      <DependentUpon>FormPrincCombustible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormPrincipalComb.resx">
+      <DependentUpon>FormPrincipalComb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormPruebaRendimiento.resx">
+      <DependentUpon>FormPruebaRendimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormReporteBonos.resx">
+      <DependentUpon>FormReporteBonos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormSeguimientoP.resx">
+      <DependentUpon>FormSeguimientoP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormVacios.resx">
+      <DependentUpon>FormVacios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Combustible\FormValidacionOperaciones.resx">
+      <DependentUpon>FormValidacionOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Configuracion\FormConfiguracion.resx">
+      <DependentUpon>FormConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Consultas\FormConsultas.resx">
+      <DependentUpon>FormConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Contrato\FormDatoContrato.resx">
+      <DependentUpon>FormDatoContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Contrato\FormHistorialContrato.resx">
+      <DependentUpon>FormHistorialContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Controles\Uber-Taxi\FormCancela.resx">
+      <DependentUpon>FormCancela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Controles\Uber-Taxi\FormCierreUTextra.resx">
+      <DependentUpon>FormCierreUTextra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Controles\Uber-Taxi\FormConfiguracion.resx">
+      <DependentUpon>FormConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Controles\Uber-Taxi\FormReporteUT.resx">
+      <DependentUpon>FormReporteUT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Controles\Uber-Taxi\FormUber-Taxi.resx">
+      <DependentUpon>FormUber-Taxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Controles\Uber-Taxi\FormUber-TaxiExtra.resx">
+      <DependentUpon>FormUber-TaxiExtra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Facturacion\FormCancelaFactura.resx">
+      <DependentUpon>FormCancelaFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Facturacion\FormCobroFactura.resx">
+      <DependentUpon>FormCobroFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Facturacion\FormControl.resx">
+      <DependentUpon>FormControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Facturacion\FormFactHenniges.resx">
+      <DependentUpon>FormFactHenniges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Facturacion\FormFacturacion.resx">
+      <DependentUpon>FormFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Facturacion\FormFacturar.resx">
+      <DependentUpon>FormFacturar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Facturacion\FormPagada.resx">
+      <DependentUpon>FormPagada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Facturacion\FormPreciosF.resx">
+      <DependentUpon>FormPreciosF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\FormMensaje.resx">
+      <DependentUpon>FormMensaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\FormPrincipal.es-MX.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Incapacidad\FormIncapacidades.resx">
+      <DependentUpon>FormIncapacidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Lector\FormCapture_Stream.resx">
+      <DependentUpon>FormCapture_Stream.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Lector\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Lector\FormReader_Select.resx">
+      <DependentUpon>FormReader_Select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Lector\FormVerification.resx">
+      <DependentUpon>FormVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Complementos Libro\FormCabiosValidacion.resx">
+      <DependentUpon>FormCabiosValidacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Complementos Libro\FormCambiarAcuerdo.resx">
+      <DependentUpon>FormCambiarAcuerdo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Complementos Libro\FormCancelacionCotizacion.resx">
+      <DependentUpon>FormCancelacionCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Complementos Libro\FormCancelarVehiculo.resx">
+      <DependentUpon>FormCancelarVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Complementos Libro\FormConfirmarServicio.resx">
+      <DependentUpon>FormConfirmarServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Complementos Libro\FormConfirmaServicio.resx">
+      <DependentUpon>FormConfirmaServicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Complementos Libro\FormEncuestaPost.resx">
+      <DependentUpon>FormEncuestaPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Complementos Libro\FormEncuestaPost2.resx">
+      <DependentUpon>FormEncuestaPost2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Complementos Libro\FormEnviarCorreo.resx">
+      <DependentUpon>FormEnviarCorreo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Complementos Libro\formParametro.resx">
+      <DependentUpon>formParametro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Complementos Libro\FormParametros.resx">
+      <DependentUpon>FormParametros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Complementos Libro\FormReportes.resx">
+      <DependentUpon>FormReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Complementos Libro\FormValidacionServicios.resx">
+      <DependentUpon>FormValidacionServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\FormDetalleFactura.resx">
+      <DependentUpon>FormDetalleFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\FormLibroViajes.resx">
+      <DependentUpon>FormLibroViajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormAnticipos.resx">
+      <DependentUpon>FormAnticipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormAvisoFacturaP.resx">
+      <DependentUpon>FormAvisoFacturaP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormCambioPrecioVehiculo.resx">
+      <DependentUpon>FormCambioPrecioVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormCobroValidacion.resx">
+      <DependentUpon>FormCobroValidacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormContribuyentes.resx">
+      <DependentUpon>FormContribuyentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormControlPagos.resx">
+      <DependentUpon>FormControlPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormGastosServicios.resx">
+      <DependentUpon>FormGastosServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormIncobrable.resx">
+      <DependentUpon>FormIncobrable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormIngresaFactura.resx">
+      <DependentUpon>FormIngresaFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormInsertarCobro.resx">
+      <DependentUpon>FormInsertarCobro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormModificaAnticipo.resx">
+      <DependentUpon>FormModificaAnticipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormModificarTipoP.resx">
+      <DependentUpon>FormModificarTipoP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormNuevoAnticipo.resx">
+      <DependentUpon>FormNuevoAnticipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormOrdenFactura.resx">
+      <DependentUpon>FormOrdenFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormPagoCobroEspecial.resx">
+      <DependentUpon>FormPagoCobroEspecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormPagos.resx">
+      <DependentUpon>FormPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormReportesPrivilegiosPagos.resx">
+      <DependentUpon>FormReportesPrivilegiosPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\FormVerOperador.resx">
+      <DependentUpon>FormVerOperador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Pagos\PrivilegiosPagos.resx">
+      <DependentUpon>PrivilegiosPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Validacion Final\FormCompletaSaldo.resx">
+      <DependentUpon>FormCompletaSaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Validacion Final\FormRecuperado.resx">
+      <DependentUpon>FormRecuperado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro Nuevo\Validacion Final\FormValidarServicios.resx">
+      <DependentUpon>FormValidarServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro\FormAnticipos.resx">
+      <DependentUpon>FormAnticipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro\FormAsignacionCobro.resx">
+      <DependentUpon>FormAsignacionCobro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro\FormAsignOperadores.resx">
+      <DependentUpon>FormAsignOperadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro\FormAuditacion.resx">
+      <DependentUpon>FormAuditacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro\FormCambiosAsiganacion.resx">
+      <DependentUpon>FormCambiosAsiganacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro\FormDatosFactura.resx">
+      <DependentUpon>FormDatosFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro\FormFacturaEsp.resx">
+      <DependentUpon>FormFacturaEsp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro\FormIngresoRapido.resx">
+      <DependentUpon>FormIngresoRapido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro\FormMixto.resx">
+      <DependentUpon>FormMixto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro\FormReporteVentas.resx">
+      <DependentUpon>FormReporteVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro\FormTerminoFact.resx">
+      <DependentUpon>FormTerminoFact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro\FormValidacionEsp.resx">
+      <DependentUpon>FormValidacionEsp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro\FormValidaFact.resx">
+      <DependentUpon>FormValidaFact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Libro\LibroViajes.resx">
+      <DependentUpon>LibroViajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\FormAgrupación.resx">
+      <DependentUpon>FormAgrupación.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\FormEntrada.resx">
+      <DependentUpon>FormEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\FormExistencia.resx">
+      <DependentUpon>FormExistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\FormIntervencion.resx">
+      <DependentUpon>FormIntervencion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\FormMovimientos.resx">
+      <DependentUpon>FormMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\FormOrdenCompra.resx">
+      <DependentUpon>FormOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\FormProducto.resx">
+      <DependentUpon>FormProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\FormProveedores.resx">
+      <DependentUpon>FormProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\FormRegistrosComp.resx">
+      <DependentUpon>FormRegistrosComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\FormSalida.resx">
+      <DependentUpon>FormSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormCancelarOrdenTrabajo.resx">
+      <DependentUpon>FormCancelarOrdenTrabajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormOrdenTrabajoCambiarSalida.resx">
+      <DependentUpon>FormOrdenTrabajoCambiarSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormOrdenTrabajoEntrada.resx">
+      <DependentUpon>FormOrdenTrabajoEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormOrdenTrabajoFallasReportadas.resx">
+      <DependentUpon>FormOrdenTrabajoFallasReportadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormOrdenTrabajoModificaMecanico.resx">
+      <DependentUpon>FormOrdenTrabajoModificaMecanico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormOrdenTrabajoSalida.resx">
+      <DependentUpon>FormOrdenTrabajoSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo\FormReprogramarFallas.resx">
+      <DependentUpon>FormReprogramarFallas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\FormAlmacen.resx">
+      <DependentUpon>FormAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\FormEstadoUnidad.resx">
+      <DependentUpon>FormEstadoUnidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\FormESvehiculos.resx">
+      <DependentUpon>FormESvehiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\FormMantenimientosPreventivos.resx">
+      <DependentUpon>FormMantenimientosPreventivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Mantenimiento\FormOrdenTrabajo.resx">
+      <DependentUpon>FormOrdenTrabajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Monitoreo\FormDetalleLicencia.resx">
+      <DependentUpon>FormDetalleLicencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Monitoreo\FormLicencia.resx">
+      <DependentUpon>FormLicencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Monitoreo\FormMonitoreoContrato.resx">
+      <DependentUpon>FormMonitoreoContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Monitoreo\ReporteLicencia.resx">
+      <DependentUpon>ReporteLicencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Anticipos\FormHistorialTotalizado.resx">
+      <DependentUpon>FormHistorialTotalizado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Anticipos\FormModificarFechaAnticipo.resx">
+      <DependentUpon>FormModificarFechaAnticipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Anticipos\FormMotivoEliminar.resx">
+      <DependentUpon>FormMotivoEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Anticipos\FormPrestamoTotalizado.resx">
+      <DependentUpon>FormPrestamoTotalizado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Anticipos\FormPrincAnticipos.resx">
+      <DependentUpon>FormPrincAnticipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Anticipos\FormTaxi.resx">
+      <DependentUpon>FormTaxi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Anticipos\FormTaxiPago.resx">
+      <DependentUpon>FormTaxiPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Bono\FormBonificacion.resx">
+      <DependentUpon>FormBonificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Bono\FormBonos.resx">
+      <DependentUpon>FormBonos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Bono\FormPerdida.resx">
+      <DependentUpon>FormPerdida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\Finanzas\FormAnticipos.resx">
+      <DependentUpon>FormAnticipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\Finanzas\FormCompleta.resx">
+      <DependentUpon>FormCompleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\Finanzas\FormDatosIncobrable.resx">
+      <DependentUpon>FormDatosIncobrable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\Finanzas\FormPendientes.resx">
+      <DependentUpon>FormPendientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\Finanzas\FormReporte.resx">
+      <DependentUpon>FormReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\Finanzas\FormXCobrar.resx">
+      <DependentUpon>FormXCobrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\FormCabiosReg.resx">
+      <DependentUpon>FormCabiosReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\FormCobroCasetas.resx">
+      <DependentUpon>FormCobroCasetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\FormCuentasEsp.resx">
+      <DependentUpon>FormCuentasEsp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\FormElimina.resx">
+      <DependentUpon>FormElimina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\FormFiltros.resx">
+      <DependentUpon>FormFiltros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\FormFormaPago.resx">
+      <DependentUpon>FormFormaPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\FormFormaPago2.resx">
+      <DependentUpon>FormFormaPago2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\FormIngresoFact.resx">
+      <DependentUpon>FormIngresoFact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\FormMalFlujo.resx">
+      <DependentUpon>FormMalFlujo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\FormPrivilegioCobro.resx">
+      <DependentUpon>FormPrivilegioCobro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\FormRango.resx">
+      <DependentUpon>FormRango.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\FormTipoPago.resx">
+      <DependentUpon>FormTipoPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\FormTotalFecha.resx">
+      <DependentUpon>FormTotalFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Especiales\FormXcobrar.resx">
+      <DependentUpon>FormXcobrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\FormEfectivoCheque.resx">
+      <DependentUpon>FormEfectivoCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\FormImportes.resx">
+      <DependentUpon>FormImportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\FormImpuestos.resx">
+      <DependentUpon>FormImpuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\FormIngresoExtra.resx">
+      <DependentUpon>FormIngresoExtra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\FormNomina.resx">
+      <DependentUpon>FormNomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\FormOperadorExterno.resx">
+      <DependentUpon>FormOperadorExterno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\FormReporteNomina.resx">
+      <DependentUpon>FormReporteNomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Nomina Fiscal\FormCuentaBancaria.resx">
+      <DependentUpon>FormCuentaBancaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Nomina Fiscal\FormModificaOperador.resx">
+      <DependentUpon>FormModificaOperador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Nomina Fiscal\FormNominaFiscal.resx">
+      <DependentUpon>FormNominaFiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Nomina Fiscal\FormSueldoReal.resx">
+      <DependentUpon>FormSueldoReal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Nomina Fiscal\FormValidaCuenta.resx">
+      <DependentUpon>FormValidaCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Recibo\FormRecibo.resx">
+      <DependentUpon>FormRecibo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\Recibo\FormSueldos.resx">
+      <DependentUpon>FormSueldos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Nomina\SinPrecio\FormViajesSinPrecio.resx">
+      <DependentUpon>FormViajesSinPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Notificaciones\FormNCumpleanos.resx">
+      <DependentUpon>FormNCumpleanos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\Despacho\FormPrincOperadores.resx">
+      <DependentUpon>FormPrincOperadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\Despacho\FormProgramaRecados.resx">
+      <DependentUpon>FormProgramaRecados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\Despacho\FormRecadoOperador.resx">
+      <DependentUpon>FormRecadoOperador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\Despacho\FormRecados.resx">
+      <DependentUpon>FormRecados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormAddDelRutas.resx">
+      <DependentUpon>FormAddDelRutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormAddRutas.resx">
+      <DependentUpon>FormAddRutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormApoyos.resx">
+      <DependentUpon>FormApoyos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormCancelCambio.resx">
+      <DependentUpon>FormCancelCambio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormCancelEsp.resx">
+      <DependentUpon>FormCancelEsp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormComentario.resx">
+      <DependentUpon>FormComentario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormComentarios.resx">
+      <DependentUpon>FormComentarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormDatosEspecial.resx">
+      <DependentUpon>FormDatosEspecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormDatosOperador.resx">
+      <DependentUpon>FormDatosOperador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormEmpresasOperaciones.resx">
+      <DependentUpon>FormEmpresasOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormFaltantes.resx">
+      <DependentUpon>FormFaltantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormGloboMsj.resx">
+      <DependentUpon>FormGloboMsj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormListaSueldos.resx">
+      <DependentUpon>FormListaSueldos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormMensaje.resx">
+      <DependentUpon>FormMensaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormModificaOperador.resx">
+      <DependentUpon>FormModificaOperador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormMsjDatosOperador.resx">
+      <DependentUpon>FormMsjDatosOperador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormMsjGral.resx">
+      <DependentUpon>FormMsjGral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormNuevaRuta.resx">
+      <DependentUpon>FormNuevaRuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormOperacionesOperador.resx">
+      <DependentUpon>FormOperacionesOperador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormOperadores.resx">
+      <DependentUpon>FormOperadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormOperadorEsp.resx">
+      <DependentUpon>FormOperadorEsp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormOrdenEmpresas.resx">
+      <DependentUpon>FormOrdenEmpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormPasajeros.resx">
+      <DependentUpon>FormPasajeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormPrincEspeciales.resx">
+      <DependentUpon>FormPrincEspeciales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormPrin_Empresas.resx">
+      <DependentUpon>FormPrin_Empresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormPruebaRendimiento.resx">
+      <DependentUpon>FormPruebaRendimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormPruebasRend.resx">
+      <DependentUpon>FormPruebasRend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormReconRutas.resx">
+      <DependentUpon>FormReconRutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormRefRutas.resx">
+      <DependentUpon>FormRefRutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormRutasCercanas.resx">
+      <DependentUpon>FormRutasCercanas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\FormSuplente.resx">
+      <DependentUpon>FormSuplente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operaciones\Turno.resx">
+      <DependentUpon>Turno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\CardexAdmin\FormCardexAdmin.resx">
+      <DependentUpon>FormCardexAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\FormBusquedaAdmin.resx">
+      <DependentUpon>FormBusquedaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\FormBusquedaOperador.resx">
+      <DependentUpon>FormBusquedaOperador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\FormContacto.resx">
+      <DependentUpon>FormContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\FormCuentaBancaria.resx">
+      <DependentUpon>FormCuentaBancaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\FormDependiente.resx">
+      <DependentUpon>FormDependiente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\FormDetalleBaja.resx">
+      <DependentUpon>FormDetalleBaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\FormExperiencia.resx">
+      <DependentUpon>FormExperiencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\FormLicencia.resx">
+      <DependentUpon>FormLicencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\FormModificaOp.resx">
+      <DependentUpon>FormModificaOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\FormOperador.resx">
+      <DependentUpon>FormOperador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\FormOrdenCaritas.resx">
+      <DependentUpon>FormOrdenCaritas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\FormPuesto.resx">
+      <DependentUpon>FormPuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\FormTelefono.resx">
+      <DependentUpon>FormTelefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Modificar\FormContacto.resx">
+      <DependentUpon>FormContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Modificar\FormDependiente.resx">
+      <DependentUpon>FormDependiente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Modificar\FormLicencia.resx">
+      <DependentUpon>FormLicencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Modificar\FormTelefono.resx">
+      <DependentUpon>FormTelefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormApto.resx">
+      <DependentUpon>FormApto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormCancelaLlamada.resx">
+      <DependentUpon>FormCancelaLlamada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormCitas.resx">
+      <DependentUpon>FormCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormCitaWhatsapp.resx">
+      <DependentUpon>FormCitaWhatsapp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormContratacion.resx">
+      <DependentUpon>FormContratacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormFoto.resx">
+      <DependentUpon>FormFoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormImagen.resx">
+      <DependentUpon>FormImagen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormLicenciasAjuste.resx">
+      <DependentUpon>FormLicenciasAjuste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormLlamada.resx">
+      <DependentUpon>FormLlamada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormMensajes.resx">
+      <DependentUpon>FormMensajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormMotivoBT.resx">
+      <DependentUpon>FormMotivoBT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormParametros.resx">
+      <DependentUpon>FormParametros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormRechazar.resx">
+      <DependentUpon>FormRechazar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormReCita.resx">
+      <DependentUpon>FormReCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormRegistar.resx">
+      <DependentUpon>FormRegistar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormTelefonos.resx">
+      <DependentUpon>FormTelefonos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormValidaCitas.resx">
+      <DependentUpon>FormValidaCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormValidaDatos.resx">
+      <DependentUpon>FormValidaDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Operador\Pre-Seleccion\FormZonasFuentes.resx">
+      <DependentUpon>FormZonasFuentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\Cardex\FormOtros.resx">
+      <DependentUpon>FormOtros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\Cardex\FormOtros2.resx">
+      <DependentUpon>FormOtros2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\Cardex\FormSeguimiento.resx">
+      <DependentUpon>FormSeguimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\Dato\FormRutasFaltantes.resx">
+      <DependentUpon>FormRutasFaltantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\FormAvisoBajas.resx">
+      <DependentUpon>FormAvisoBajas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\FormCardex.resx">
+      <DependentUpon>FormCardex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\FormCardexCoordinador.resx">
+      <DependentUpon>FormCardexCoordinador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\FormIncidencias.resx">
+      <DependentUpon>FormIncidencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\FormReconocimientoRuta.resx">
+      <DependentUpon>FormReconocimientoRuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\FormReporteBonificaciones.resx">
+      <DependentUpon>FormReporteBonificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\FormReporteCombustible.resx">
+      <DependentUpon>FormReporteCombustible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\FormReporteGerencial.resx">
+      <DependentUpon>FormReporteGerencial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\FormReporteNomina.resx">
+      <DependentUpon>FormReporteNomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\FormReporteOperaciones.resx">
+      <DependentUpon>FormReporteOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\FormReporteRutas.resx">
+      <DependentUpon>FormReporteRutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\FormReporteRutasExtras.resx">
+      <DependentUpon>FormReporteRutasExtras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\FormReportesAltaBajaOperador.resx">
+      <DependentUpon>FormReportesAltaBajaOperador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\FormReporteViajesDespacho.resx">
+      <DependentUpon>FormReporteViajesDespacho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\FormViajesExternos.resx">
+      <DependentUpon>FormViajesExternos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Reportes\FormViajesOperador.resx">
+      <DependentUpon>FormViajesOperador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Ruta\Complemento Cambio ruta\FormExtraANormal.resx">
+      <DependentUpon>FormExtraANormal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Ruta\FormBuscar.resx">
+      <DependentUpon>FormBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Ruta\FormBusquedaRuta.resx">
+      <DependentUpon>FormBusquedaRuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Ruta\FormRuta.resx">
+      <DependentUpon>FormRuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Ruta\FormRutasExtras.resx">
+      <DependentUpon>FormRutasExtras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Ruta\FormTipoRuta.resx">
+      <DependentUpon>FormTipoRuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Unidad\FormBusquedaUnidad.resx">
+      <DependentUpon>FormBusquedaUnidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Unidad\FormEquipamiento.resx">
+      <DependentUpon>FormEquipamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Unidad\FormFotos.resx">
+      <DependentUpon>FormFotos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Unidad\FormOperadorVehiculoHistorial.resx">
+      <DependentUpon>FormOperadorVehiculoHistorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Unidad\FormPlacasRevision.resx">
+      <DependentUpon>FormPlacasRevision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Unidad\FormUnidad.resx">
+      <DependentUpon>FormUnidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Unidad\Gestoria\FormParametrosGestoria.resx">
+      <DependentUpon>FormParametrosGestoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Unidad\Gestoria\Gestoria.resx">
+      <DependentUpon>Gestoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Usuario\FormBusquedaUsuario.resx">
+      <DependentUpon>FormBusquedaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Usuario\FormDetallePrivilegio.resx">
+      <DependentUpon>FormDetallePrivilegio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Usuario\FormModificarCuenta.resx">
+      <DependentUpon>FormModificarCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Usuario\FormUsuario.resx">
+      <DependentUpon>FormUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Zona\FormAgregar.resx">
+      <DependentUpon>FormAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Zona\FormRelacion.resx">
+      <DependentUpon>FormRelacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Zona\FormRemover.resx">
+      <DependentUpon>FormRemover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Zona\FormZona.resx">
+      <DependentUpon>FormZona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LAR.resx">
+      <DependentUpon>LAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Conexion Servidor\Controles" />
+    <Folder Include="Interfaz\Controles\Uber-Taxi" />
+    <Folder Include="Interfaz\Libro Nuevo\Dato" />
+    <Folder Include="Interfaz\Libro Nuevo\Complementos Libro" />
+    <Folder Include="Interfaz\Libro Nuevo\Validacion Final" />
+    <Folder Include="Interfaz\Libro Nuevo\Pagos" />
+    <Folder Include="Interfaz\Mantenimiento\Complementos\Orden Trabajo" />
+    <Folder Include="Interfaz\Libro Nuevo" />
+    <Folder Include="Interfaz\Nomina\Nomina Fiscal" />
+    <Folder Include="Interfaz\Notificaciones" />
+    <Folder Include="Interfaz\Controles" />
+    <Folder Include="Interfaz\Operador\CardexAdmin" />
+    <Folder Include="Interfaz\Operador\Pre-Seleccion" />
+    <Folder Include="Interfaz\Ruta\Complemento Cambio ruta" />
+    <Folder Include="Interfaz\Unidad\Gestoria" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Transportes_LAR.cd" />
+  </ItemGroup>
+</Project>
