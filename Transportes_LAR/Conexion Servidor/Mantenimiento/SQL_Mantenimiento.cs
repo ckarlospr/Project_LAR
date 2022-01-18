@@ -77,9 +77,37 @@ namespace Transportes_LAR.Conexion_Servidor.Mantenimiento
 					base.conexion.Close();
 				}
 				
-				public void InsertarHistorialEntrada(Int32 Entrada, String FechaRegistro, String Usuario)
+//				public void InsertarHistorialEntrada(Int32 Entrada, String FechaRegistro, String Usuario)
+//				{
+//					String sentencia = "INSERT INTO HISTORIAL_ENTRADA_PRAL VALUES ('"+Entrada+"', '"+FechaRegistro+"', '"+Usuario+"')";
+//					base.getAbrirConexion(sentencia);
+//					base.comando.ExecuteNonQuery();
+//					base.conexion.Close();
+//				}
+				
+				public void InsertarHistorialEntrada(String ID_Producto, String ID_OrdenCompra, String FechaEntrada, String Cantidad, String id_lista)
 				{
-					String sentencia = "INSERT INTO HISTORIAL_ENTRADA_PRAL VALUES ('"+Entrada+"', '"+FechaRegistro+"', '"+Usuario+"')";
+					String sentencia = "INSERT INTO HISTORIAL_ENTRADA_PRODUCTO VALUES ("+ID_Producto+", "+ID_OrdenCompra+", '"+FechaEntrada+"', '"+Cantidad+"', '', '', GETDATE(), 1)";
+					base.getAbrirConexion(sentencia);
+					base.comando.ExecuteNonQuery();
+					base.conexion.Close();
+					
+					sentencia = "update PRODUCTO_ALMACEN set EXISTENCIA=EXISTENCIA+'"+Cantidad+"' where ID="+ID_Producto;
+					base.getAbrirConexion(sentencia);
+					base.comando.ExecuteNonQuery();
+					base.conexion.Close();
+					
+					sentencia = "update LISTA_ORDENCOMPRA set Flujo=2 where ID="+id_lista;
+					base.getAbrirConexion(sentencia);
+					base.comando.ExecuteNonQuery();
+					base.conexion.Close();
+					
+					
+				}
+				
+				public void InsertarHistorialEntrada(String ID_OC)
+				{
+					String sentencia = "update dbo.ORDEN_COMPRA set FLUJO=2 where ID= "+ID_OC;
 					base.getAbrirConexion(sentencia);
 					base.comando.ExecuteNonQuery();
 					base.conexion.Close();

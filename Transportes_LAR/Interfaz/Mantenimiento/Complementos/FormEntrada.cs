@@ -43,9 +43,11 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 		{		
 			cmdValidar.Enabled=true;
 			cmdAgregar.Enabled=false;
+			txtCantidad.Text="0";
+			dtpEntrada.Value=DateTime.Today;
 			dataEntrada.Rows.Clear();
 			dataEntrada.ClearSelection();
-			String consulta = 	"select P.ID, P.PIEZA, p.MARCA, P.MODELO, L.CANTIDAD, P.CODIGO_BARRAS, O.ID_PROVEE, O.FechaCreacion, L.flujo "+
+			String consulta = 	"select P.ID, L.ID id_lista, P.PIEZA, p.MARCA, P.MODELO, L.CANTIDAD, P.CODIGO_BARRAS, O.ID_PROVEE, O.FechaCreacion, L.flujo "+
 								"from dbo.ORDEN_COMPRA O with(nolock)" +
 								"	inner join dbo.LISTA_ORDENCOMPRA L with(nolock) on O.ID=L.ID_ORDENC"+
 								"	inner join dbo.PRODUCTO_ALMACEN P with(nolock) on L.ID_PROD=P.ID "+
@@ -55,7 +57,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			while(conn.leer.Read())
 			{
 				dataEntrada.Rows.Add(conn.leer["ID"].ToString(), 
-				                     "",
+				                     conn.leer["id_lista"].ToString(), 
 				                   	conn.leer["PIEZA"].ToString(), 
 				                   	conn.leer["MARCA"].ToString(),
 				                  	conn.leer["MODELO"].ToString(),
@@ -120,7 +122,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 //			cmbBuscarPor.Text = null;
 //			txtBuscarComo.Text = "";
 //			chbAgrupar.Checked = false;
-			btnAgregar.Enabled = true;
+//			btnAgregar.Enabled = true;
 //			txtFecha.Text = Fecha();
 			dataEntrada.Columns[5].ReadOnly = false;
 		}
@@ -139,7 +141,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 				//sqlmant.InsertarDetalleEntrada(Convert.ToInt32(sqlmant.IDEntradaTop()), cant, orig);
 			}
 			
-			sqlmant.InsertarHistorialEntrada(Convert.ToInt32(sqlmant.IDEntradaTop()), Fecha(), ID_USUARIO);
+//			sqlmant.InsertarHistorialEntrada(Convert.ToInt32(sqlmant.IDEntradaTop()), Fecha(), ID_USUARIO);
 			
 			for(int i = 0; i < noFilas; i++)
 			{
@@ -148,7 +150,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 				sqlmant.ActualizaExistencias(cantidad, Convert.ToInt32(idProd));
 			}
 			
-			btnAgregar.Enabled = false;
+//			btnAgregar.Enabled = false;
 		}
 		
 		void BtnVistaClick(object sender, EventArgs e)
@@ -162,7 +164,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 //			txtBuscarComo.Text = "";
 //			chbAgrupar.Checked = false;
 			//Adaptador();
-			btnAgregar.Enabled = false;
+//			btnAgregar.Enabled = false;
 			dataEntrada.Columns[5].ReadOnly = true;
 		}
 		#endregion
@@ -173,7 +175,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			CamposEnabled(false);
 			this.Validar(this);
 			ColoresAlternadosRows(dataEntrada);
-			btnAgregar.Enabled = false;			
+//			btnAgregar.Enabled = false;			
 			//Adaptador();
 			getDataFolio("");
 			
@@ -483,21 +485,38 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 		
 		void DataEntradaCellClick(object sender, DataGridViewCellEventArgs e)
 		{
-			if(dataEntrada[10,e.RowIndex].Value.ToString()=="1"){
-				cmdAgregar.Enabled=true;
-			}else{
-				cmdAgregar.Enabled=false;
+			if(e.RowIndex>-1)
+			{
+				if(dataEntrada[10,e.RowIndex].Value.ToString()=="1"){
+					cmdAgregar.Enabled=true;
+					dtpEntrada.Value=Convert.ToDateTime(dgOCompra[2, dgOCompra.CurrentRow.Index].Value.ToString());
+					txtCantidad.Text=dataEntrada[5, e.RowIndex].Value.ToString();
+				}else{
+					cmdAgregar.Enabled=false;
+					txtCantidad.Text="0";
+					dtpEntrada.Value=DateTime.Today;
+				}
 			}
 		}
 		
 		void CmdAgregarClick(object sender, EventArgs e)
 		{
-			AgregarEntrada(dataEntrada[0, dataEntrada.CurrentRow.Index].Value.ToString());
+			AgregarEntrada(dataEntrada[0, dataEntrada.CurrentRow.Index].Value.ToString(), dgOCompra[0, dgOCompra.CurrentRow.Index].Value.ToString(), dataEntrada[1, dataEntrada.CurrentRow.Index].Value.ToString());
+			Adaptador(dgOCompra[1, dgOCompra.CurrentRow.Index].Value.ToString());
+			
 		}
 		
-		void AgregarEntrada(String ID_Producto){
-			//sqlmant.
+		void AgregarEntrada(String ID_Producto, String ID_OCompra, String ID_Lista){
 			
+			sqlmant.InsertarHistorialEntrada(ID_Producto, ID_OCompra, dtpEntrada.Value.ToShortDateString(), txtCantidad.Text, ID_Lista);
+			
+		}
+		
+		void CmdValidarClick(object sender, EventArgs e)
+		{
+			sqlmant.InsertarHistorialEntrada(dgOCompra[0, dgOCompra.CurrentRow.Index].Value.ToString());
+			getDataFolio("");
+			dataEntrada.Rows.Clear();
 		}
 	}
 }
