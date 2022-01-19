@@ -517,6 +517,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			sqlmant.InsertarHistorialEntrada(dgOCompra[0, dgOCompra.CurrentRow.Index].Value.ToString());
 			getDataFolio("");
 			dataEntrada.Rows.Clear();
+			cmdValidar.Enabled=false;
 		}
 	}
 }

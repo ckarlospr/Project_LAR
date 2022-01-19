@@ -99,7 +99,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			this.dataEntrada.Name = "dataEntrada";
 			this.dataEntrada.RowHeadersVisible = false;
 			this.dataEntrada.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataEntrada.Size = new System.Drawing.Size(713, 489);
+			this.dataEntrada.Size = new System.Drawing.Size(713, 522);
 			this.dataEntrada.TabIndex = 5;
 			this.dataEntrada.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataEntradaCellClick);
 			this.dataEntrada.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.DataEntradaEditingControlShowing);
@@ -224,7 +224,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			this.dgOCompra.Name = "dgOCompra";
 			this.dgOCompra.RowHeadersVisible = false;
 			this.dgOCompra.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dgOCompra.Size = new System.Drawing.Size(164, 489);
+			this.dgOCompra.Size = new System.Drawing.Size(164, 522);
 			this.dgOCompra.TabIndex = 248;
 			this.dgOCompra.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgOCompraCellClick);
 			// 
@@ -254,7 +254,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			// cbValidados
 			// 
 			this.cbValidados.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cbValidados.Location = new System.Drawing.Point(50, 28);
+			this.cbValidados.Location = new System.Drawing.Point(48, 28);
 			this.cbValidados.Name = "cbValidados";
 			this.cbValidados.Size = new System.Drawing.Size(84, 20);
 			this.cbValidados.TabIndex = 248;
@@ -265,9 +265,9 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			// cmdAgregar
 			// 
 			this.cmdAgregar.Enabled = false;
-			this.cmdAgregar.Location = new System.Drawing.Point(919, 210);
+			this.cmdAgregar.Location = new System.Drawing.Point(902, 430);
 			this.cmdAgregar.Name = "cmdAgregar";
-			this.cmdAgregar.Size = new System.Drawing.Size(75, 41);
+			this.cmdAgregar.Size = new System.Drawing.Size(92, 41);
 			this.cmdAgregar.TabIndex = 249;
 			this.cmdAgregar.Text = "Agregar";
 			this.cmdAgregar.UseVisualStyleBackColor = true;
@@ -276,11 +276,11 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			// cmdValidar
 			// 
 			this.cmdValidar.Enabled = false;
-			this.cmdValidar.Location = new System.Drawing.Point(919, 528);
+			this.cmdValidar.Location = new System.Drawing.Point(902, 522);
 			this.cmdValidar.Name = "cmdValidar";
-			this.cmdValidar.Size = new System.Drawing.Size(75, 41);
+			this.cmdValidar.Size = new System.Drawing.Size(92, 47);
 			this.cmdValidar.TabIndex = 250;
-			this.cmdValidar.Text = "Validar OC";
+			this.cmdValidar.Text = "Validar Orden de Compra";
 			this.cmdValidar.UseVisualStyleBackColor = true;
 			this.cmdValidar.Click += new System.EventHandler(this.CmdValidarClick);
 			// 
@@ -288,17 +288,17 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			// 
 			this.dtpEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.dtpEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.dtpEntrada.Location = new System.Drawing.Point(902, 122);
+			this.dtpEntrada.Location = new System.Drawing.Point(902, 348);
 			this.dtpEntrada.Name = "dtpEntrada";
-			this.dtpEntrada.Size = new System.Drawing.Size(114, 20);
+			this.dtpEntrada.Size = new System.Drawing.Size(92, 20);
 			this.dtpEntrada.TabIndex = 251;
 			// 
 			// txtCantidad
 			// 
 			this.txtCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtCantidad.Location = new System.Drawing.Point(902, 164);
+			this.txtCantidad.Location = new System.Drawing.Point(902, 390);
 			this.txtCantidad.Name = "txtCantidad";
-			this.txtCantidad.Size = new System.Drawing.Size(114, 20);
+			this.txtCantidad.Size = new System.Drawing.Size(92, 20);
 			this.txtCantidad.TabIndex = 252;
 			this.txtCantidad.Text = "0";
 			this.txtCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -309,7 +309,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.AutoSize = true;
 			this.BackColor = System.Drawing.Color.Tan;
-			this.ClientSize = new System.Drawing.Size(1108, 614);
+			this.ClientSize = new System.Drawing.Size(1010, 614);
 			this.Controls.Add(this.txtCantidad);
 			this.Controls.Add(this.dtpEntrada);
 			this.Controls.Add(this.cmdValidar);
