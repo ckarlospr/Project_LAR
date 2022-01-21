@@ -218,10 +218,10 @@ namespace Transportes_LAR.Conexion_Servidor.Mantenimiento
 				#endregion
 				
 				#region PRODUCTO
-				public void InsertarProducto(String PIEZA, String MARCA, String MODELO, String APLICACION, String TIPOVEHICULO, float CANTIDAD, String MEDIDA, String ID_GRUPO, String NO_SERIE, String CODIGOBARRAS)
+				public void InsertarProducto(String PIEZA, String MARCA, String MODELO, String APLICACION, String TIPOVEHICULO, float CANTIDAD, String MEDIDA, String ID_GRUPO, String NO_SERIE, String CODIGOBARRAS, String numero, String Codigo)
 				{
 					string sentencia = "";
-					sentencia = "INSERT INTO PRODUCTO_ALMACEN (PIEZA, MARCA, MODELO, APLICACION, TIPOVEHICULO, EXISTENCIA, MEDICION, ESTATUS, ID_GRUPO, NO_SERIE, CODIGO_BARRAS) values ('"+PIEZA+"', '"+MARCA+"', '"+MODELO+"', '"+APLICACION+"', '"+TIPOVEHICULO+"', '"+CANTIDAD+"', '"+MEDIDA+"', 'Activado', '"+ID_GRUPO+"', '"+NO_SERIE+"', '"+CODIGOBARRAS+"');";
+					sentencia = "INSERT INTO PRODUCTO_ALMACEN (PIEZA, MARCA, MODELO, APLICACION, TIPOVEHICULO, EXISTENCIA, MEDICION, ESTATUS, ID_GRUPO, NO_SERIE, CODIGO_BARRAS, Codigo, NuumeroParte) values ('"+PIEZA+"', '"+MARCA+"', '"+MODELO+"', '"+APLICACION+"', '"+TIPOVEHICULO+"', '"+CANTIDAD+"', '"+MEDIDA+"', 'Activado', '"+ID_GRUPO+"', '"+NO_SERIE+"', '"+CODIGOBARRAS+"', '"+Codigo+"', '"+numero+"');";
 					base.getAbrirConexion(sentencia);
 					base.comando.ExecuteNonQuery();					
 					base.conexion.Close();
@@ -432,10 +432,10 @@ namespace Transportes_LAR.Conexion_Servidor.Mantenimiento
 				#endregion
 				
 				#region ACTUALIZAR PRODUCTO
-				public void ActualizarProducto(String PIEZA, String MARCA, String MODELO, String APLICACION, String TIPOVEHICULO, String MEDIDA, String ID_GRUPO, String NO_SERIE, String CODIGOBARRAS, int ID)
+				public void ActualizarProducto(String PIEZA, String MARCA, String MODELO, String APLICACION, String TIPOVEHICULO, String MEDIDA, String ID_GRUPO, String NO_SERIE, String CODIGOBARRAS, int ID, String NumeroParte, String Codigo)
 				{
 					string sentencia = "";
-					sentencia = "UPDATE PRODUCTO_ALMACEN SET PIEZA='"+PIEZA+"', MARCA='"+MARCA+"', MODELO='"+MODELO+"', APLICACION='"+APLICACION+"', TIPOVEHICULO='"+TIPOVEHICULO+"', MEDICION='"+MEDIDA+"', ESTATUS='Activado', ID_GRUPO="+ID_GRUPO+", NO_SERIE='"+NO_SERIE+"', CODIGO_BARRAS='"+CODIGOBARRAS+"' WHERE ID="+ID;
+					sentencia = "UPDATE PRODUCTO_ALMACEN SET PIEZA='"+PIEZA+"', MARCA='"+MARCA+"', MODELO='"+MODELO+"', APLICACION='"+APLICACION+"', TIPOVEHICULO='"+TIPOVEHICULO+"', MEDICION='"+MEDIDA+"', ESTATUS='Activado', ID_GRUPO="+ID_GRUPO+", NO_SERIE='"+NO_SERIE+"', CODIGO_BARRAS='"+CODIGOBARRAS+"', CODIGO='"+Codigo+"',	NuumeroParte='"+NumeroParte+"' WHERE ID="+ID;
 					base.getAbrirConexion(sentencia);
 					base.comando.ExecuteNonQuery();
 					base.conexion.Close();

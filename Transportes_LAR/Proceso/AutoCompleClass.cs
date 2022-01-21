@@ -283,11 +283,12 @@ namespace Transportes_LAR.Proceso
 	    	
 	    	if(celda == "Concepto")
 	    	{
-	    		conn.getAbrirConexion("SELECT pa.PIEZA, pa.MARCA, pa.MODELO FROM PRODUCTO_ALMACEN pa");
+	    		conn.getAbrirConexion("SELECT pa.CODIGO, pa.PIEZA, pa.MARCA, pa.MODELO FROM PRODUCTO_ALMACEN pa");
 				conn.leer=conn.comando.ExecuteReader();
 				while(conn.leer.Read())
 				{
-					collectAdd = conn.leer["Pieza"].ToString()+" - "+
+					collectAdd = conn.leer["CODIGO"].ToString()+" - "+
+								 conn.leer["Pieza"].ToString()+" - "+
 						   		 conn.leer["Marca"].ToString()+", "+
 						   		 conn.leer["Modelo"].ToString();
 					colect.Add(collectAdd);

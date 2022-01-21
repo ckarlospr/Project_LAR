@@ -43,7 +43,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento
 			System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
 									"Movimientos"}, 0, System.Drawing.Color.Black, System.Drawing.Color.Empty, null);
 			System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("Orden de Compra");
-			System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Catálogo", "(ninguno)");
+			System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Producto", "(ninguno)");
 			System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("Proveedores");
 			System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("Grupos Mecánicos");
 			System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("Intervención");
@@ -101,6 +101,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento
 			this.ltMenu.UseCompatibleStateImageBehavior = false;
 			this.ltMenu.View = System.Windows.Forms.View.List;
 			this.ltMenu.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.LtMenuItemSelectionChanged);
+			this.ltMenu.SelectedIndexChanged += new System.EventHandler(this.LtMenuSelectedIndexChanged);
 			// 
 			// imageList1
 			// 

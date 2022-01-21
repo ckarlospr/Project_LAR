@@ -21,12 +21,15 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 		private Conexion_Servidor.SQL_Conexion conn= new Conexion_Servidor.SQL_Conexion();
 		private Proceso.AutoCompleClass auto= new Transportes_LAR.Proceso.AutoCompleClass();
 		private Conexion_Servidor.Mantenimiento.SQL_Mantenimiento sqlmant = new Conexion_Servidor.Mantenimiento.SQL_Mantenimiento();
+		FormAlmacen princ = null;
 		#endregion
 		
 		#region CONSTRUCTORES
-		public FormProducto()
+		public FormProducto(FormAlmacen principalAlm)
 		{
+			
 			InitializeComponent();
+			princ = principalAlm;
 		}
 		#endregion
 		
@@ -38,8 +41,10 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			ColoresAlternadosRows(dataProducto);
 			Adaptador(busqueda);
             btnModificar.Enabled = false;
+            cmdModificar.Enabled = false;
             switchInsAct = true;
             cmbBuscarPor.Text = "Articulo";
+            iniciaCombo();
 		}
 		#endregion
 		
@@ -66,6 +71,8 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 				dataProducto.Rows[contador].Cells[9].Value = conn.leer["Grupo"].ToString();
 				dataProducto.Rows[contador].Cells[10].Value = conn.leer["NO_SERIE"].ToString();
 				dataProducto.Rows[contador].Cells[11].Value = conn.leer["CODIGO_BARRAS"].ToString();
+				dataProducto.Rows[contador].Cells[14].Value = conn.leer["NuumeroParte"].ToString();
+				dataProducto.Rows[contador].Cells[15].Value = conn.leer["CODIGO"].ToString();
 				contador++;			
 				foreach (DataGridViewRow row in dataProducto.Rows)
 				{
@@ -138,8 +145,11 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 					txtObservaciones.Text = dataProducto.Rows[e.RowIndex].Cells[4].Value.ToString();
 					cmbTipoVehiculo.Text = dataProducto.Rows[e.RowIndex].Cells[5].Value.ToString();				
 					cmbMetrica.Text = dataProducto.Rows[e.RowIndex].Cells[7].Value.ToString();
-					txtGrupo.Text = dataProducto.Rows[e.RowIndex].Cells[9].Value.ToString();
+					//txtGrupo.Text = dataProducto.Rows[e.RowIndex].Cells[9].Value.ToString();
+					cmbGrupo.Text = dataProducto.Rows[e.RowIndex].Cells[9].Value.ToString();
 					txtNoSerie.Text = dataProducto.Rows[e.RowIndex].Cells[10].Value.ToString();
+					txtCodigo.Text = dataProducto.Rows[e.RowIndex].Cells[15].Value.ToString();
+					txtNumeroParte.Text = dataProducto.Rows[e.RowIndex].Cells[14].Value.ToString();
 					code = dataProducto.Rows[e.RowIndex].Cells[11].Value.ToString();
 					lbCod1.Text = code.Substring(0, 3);
 					lbCod2.Text = code.Substring(3, 2);
@@ -149,6 +159,8 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 					lbCod6.Text = code.Substring(11);				
 					btnModificar.Enabled = true;
 					btnAgregar.Enabled = false;
+					cmdModificar.Enabled = true;
+					cmdAgregar.Enabled=false;
 					switchInsAct = false;
 					Accion = 2;
 				}
@@ -163,8 +175,10 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			void BtnNuevoClick(object sender, EventArgs e)
 			{	
 				LimpiarCampos();
-				btnModificar.Enabled = false;	
-				btnAgregar.Enabled = true;
+//				btnModificar.Enabled = false;	
+//				btnAgregar.Enabled = true;
+				cmdModificar.Enabled=false;
+				cmdAgregar.Enabled=true;
 				txtBuscarComo.Text = "";
 				txtArticulo.Focus();
 				Accion = 1;
@@ -176,13 +190,14 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			{
 				if(ValidaInsAct(switchInsAct) != false)
 				{
-						GenerarCodigoBarras();
-						sqlmant.InsertarProducto(txtArticulo.Text, txtMarca.Text, txtModelo.Text, txtObservaciones.Text, cmbTipoVehiculo.Text, 0, cmbMetrica.Text, sqlmant.IDAgrupacion(txtGrupo.Text), txtNoSerie.Text, codigoBarras);
-						Adaptador(busqueda);
-						LimpiarCampos();	
-						btnModificar.Enabled = false;
-						switchInsAct = true;
-						txtArticulo.Focus();
+//						GenerarCodigoBarras();
+//						sqlmant.InsertarProducto(txtArticulo.Text, txtMarca.Text, txtModelo.Text, txtObservaciones.Text, cmbTipoVehiculo.Text, 0, cmbMetrica.Text, sqlmant.IDAgrupacion(txtGrupo.Text), txtNoSerie.Text, codigoBarras);
+//						Adaptador(busqueda);
+//						LimpiarCampos();	
+//						btnModificar.Enabled = false;
+//						
+//						switchInsAct = true;
+//						txtArticulo.Focus();
 				}
 			}
 			#endregion
@@ -192,17 +207,64 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			{
 				if(ValidaInsAct(switchInsAct) != false)
 				{
-						GenerarCodigoBarras();
-						sqlmant.ActualizarProducto(txtArticulo.Text, txtMarca.Text, txtModelo.Text, txtObservaciones.Text, cmbTipoVehiculo.Text, cmbMetrica.Text, sqlmant.IDAgrupacion(txtGrupo.Text), txtNoSerie.Text, codigoBarras, id);
-						Adaptador(busqueda);		
-						LimpiarCampos();
-						btnModificar.Enabled = false;	
-						btnAgregar.Enabled = true;
-						switchInsAct = true;
-						txtArticulo.Focus();
+//						GenerarCodigoBarras();
+//						sqlmant.ActualizarProducto(txtArticulo.Text, txtMarca.Text, txtModelo.Text, txtObservaciones.Text, cmbTipoVehiculo.Text, cmbMetrica.Text, sqlmant.IDAgrupacion(txtGrupo.Text), txtNoSerie.Text, codigoBarras, id);
+//						Adaptador(busqueda);		
+//						LimpiarCampos();
+//						btnModificar.Enabled = false;
+//						cmdModificar.Enabled=false;						
+//						btnAgregar.Enabled = true;
+//						cmdAgregar.Enabled = true;
+//						switchInsAct = true;
+//						txtArticulo.Focus();
 				}
 			}
 			#endregion
+			
+		void CmdNuevoClick(object sender, EventArgs e)
+		{
+			LimpiarCampos();
+			btnModificar.Enabled = false;	
+			cmdModificar.Enabled=false;
+			btnAgregar.Enabled = true;
+			cmdAgregar.Enabled=true;
+			txtBuscarComo.Text = "";
+			txtArticulo.Focus();
+			Accion = 1;
+			iniciaCombo();
+		}
+		
+		void CmdModificarClick(object sender, EventArgs e)
+		{
+			if(ValidaInsAct(switchInsAct) != false)
+			{
+					GenerarCodigoBarras();
+					sqlmant.ActualizarProducto(txtArticulo.Text, txtMarca.Text, txtModelo.Text, txtObservaciones.Text, cmbTipoVehiculo.Text, cmbMetrica.Text, sqlmant.IDAgrupacion(cmbGrupo.Text), txtNoSerie.Text, codigoBarras, id, txtNumeroParte.Text, txtCodigo.Text);
+					Adaptador(busqueda);		
+					LimpiarCampos();
+					btnModificar.Enabled = false;	
+					cmdModificar.Enabled=false;
+					btnAgregar.Enabled = true;
+					cmdAgregar.Enabled=true;
+					switchInsAct = true;
+					txtArticulo.Focus();
+			}
+		}
+		
+		void CmdAgregarClick(object sender, EventArgs e)
+		{
+			if(ValidaInsAct(switchInsAct) != false)
+			{
+					GenerarCodigoBarras();
+					sqlmant.InsertarProducto(txtArticulo.Text, txtMarca.Text, txtModelo.Text, txtObservaciones.Text, cmbTipoVehiculo.Text, 0, cmbMetrica.Text, sqlmant.IDAgrupacion(cmbGrupo.Text), txtNoSerie.Text, codigoBarras, txtNumeroParte.Text, txtCodigo.Text);
+					Adaptador(busqueda);
+					LimpiarCampos();	
+					btnModificar.Enabled = false;
+					cmdModificar.Enabled=false;
+					switchInsAct = true;
+					txtArticulo.Focus();
+			}
+		}
 		
 		#endregion
 						
@@ -221,19 +283,19 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 						{
 							if(cmbTipoVehiculo.Text != null)
 							{
-								if(txtGrupo.Text != "")
+								if(cmbGrupo.Text != "")
 								{
 									String consulta = (accion) ? "" : "AND PIEZA !='"+sqlmant.NombreProduc(Convert.ToString(id))+"'";
 									if(sqlmant.ValidarExisteProducto(txtArticulo.Text, consulta) == true)
 									{
-										if(sqlmant.ValidarExisteAgrupacion(txtGrupo.Text) == false)
+										if(sqlmant.ValidarExisteAgrupacion(cmbGrupo.Text) == false)
 										{
 											validado = true;
 										}
 										else
 										{
 											MessageBox.Show("El nombre de grupo proporcionado no coincide con\nninguno registrado en el sistema", "Error de duplicidad de datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-											txtGrupo.Focus();
+											cmbGrupo.Focus();
 											validado = false;
 										}
 									}
@@ -247,7 +309,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 								else
 								{
 									MessageBox.Show("Es necesario completar el campo de 'Grupo'", "Error al guardar los datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-									txtGrupo.Focus();
+									cmbGrupo.Focus();
 									validado = false;
 								}
 							}
@@ -315,8 +377,10 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 				txtObservaciones.Text = "";
 				cmbTipoVehiculo.Text = null;
 				cmbMetrica.Text = null;			
-				txtGrupo.Text = null;
+				cmbGrupo.Text = "";
 				txtNoSerie.Text = "";
+				txtNumeroParte.Text = "";
+				txtCodigo.Text = "";
 				lbCod1.Text = "000";
 				lbCod2.Text = "00";
 				lbCod3.Text = "00";
@@ -383,9 +447,9 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			#region AUTOCOMPLETA GRUPO
 			void SuggestGrupo()
 			{		
-				txtGrupo.AutoCompleteCustomSource = auto.AutocompleteGeneral("SELECT * FROM GRUPO_PRODUCTO gp", "NOMBRE");
-	           	txtGrupo.AutoCompleteMode = AutoCompleteMode.Suggest;
-	            txtGrupo.AutoCompleteSource = AutoCompleteSource.CustomSource;
+//				txtGrupo.AutoCompleteCustomSource = auto.AutocompleteGeneral("SELECT * FROM GRUPO_PRODUCTO gp", "NOMBRE");
+//	           	txtGrupo.AutoCompleteMode = AutoCompleteMode.Suggest;
+//	            txtGrupo.AutoCompleteSource = AutoCompleteSource.CustomSource;
 			}
 			#endregion
 			
@@ -509,12 +573,12 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			
 			void TxtGrupoLeave(object sender, EventArgs e)
 			{
-				if(txtGrupo.Text != "")
-				{
-					String noGrupo = txtGrupo.Text.Substring(1); 
-					String grupo = (Convert.ToInt16(noGrupo) < 10) ? "0" + noGrupo : noGrupo;
-					lbCod6.Text = grupo;
-				}
+//				if(txtGrupo.Text != "")
+//				{
+//					String noGrupo = txtGrupo.Text.Substring(1); 
+//					String grupo = (Convert.ToInt16(noGrupo) < 10) ? "0" + noGrupo : noGrupo;
+//					lbCod6.Text = grupo;
+//				}
 			}
 			#endregion
 			
@@ -528,10 +592,11 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 						if(ValidaInsAct(switchInsAct) != false)
 						{
 								GenerarCodigoBarras();
-								sqlmant.InsertarProducto(txtArticulo.Text, txtMarca.Text, txtModelo.Text, txtObservaciones.Text, cmbTipoVehiculo.Text, 0, cmbMetrica.Text, sqlmant.IDAgrupacion(txtGrupo.Text), txtNoSerie.Text, codigoBarras);
+								sqlmant.InsertarProducto(txtArticulo.Text, txtMarca.Text, txtModelo.Text, txtObservaciones.Text, cmbTipoVehiculo.Text, 0, cmbMetrica.Text, sqlmant.IDAgrupacion(cmbGrupo.Text), txtNoSerie.Text, codigoBarras, txtNumeroParte.Text, txtCodigo.Text);
 								Adaptador(busqueda);
 								LimpiarCampos();	
 								btnModificar.Enabled = false;
+								cmdModificar.Enabled=false;
 								switchInsAct = true;
 								txtArticulo.Focus();
 						}
@@ -541,11 +606,13 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 						if(ValidaInsAct(switchInsAct) != false)
 						{
 								GenerarCodigoBarras();
-								sqlmant.ActualizarProducto(txtArticulo.Text, txtMarca.Text, txtModelo.Text, txtObservaciones.Text, cmbTipoVehiculo.Text, cmbMetrica.Text, sqlmant.IDAgrupacion(txtGrupo.Text), txtNoSerie.Text, codigoBarras, id);
+								sqlmant.ActualizarProducto(txtArticulo.Text, txtMarca.Text, txtModelo.Text, txtObservaciones.Text, cmbTipoVehiculo.Text, cmbMetrica.Text, sqlmant.IDAgrupacion(cmbGrupo.Text), txtNoSerie.Text, codigoBarras, id, txtNumeroParte.Text, txtCodigo.Text);
 								Adaptador(busqueda);		
 								LimpiarCampos();
 								btnModificar.Enabled = false;	
+								cmdModificar.Enabled=false;
 								btnAgregar.Enabled = true;
+								cmdAgregar.Enabled=true;
 								switchInsAct = true;
 								txtArticulo.Focus();
 						}
@@ -555,5 +622,57 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			#endregion
 
 		#endregion
+		
+		
+		
+		void TxtNumeroParteTextChanged(object sender, EventArgs e)
+		{
+		}
+		
+		void iniciaCombo()
+		{
+			cmbGrupo.Items.Clear();
+			String consulta = "select Nombre from dbo.GRUPO_PRODUCTO with(nolock) where ESTATUS='Activo'";
+			conn.getAbrirConexion(consulta);
+			conn.leer=conn.comando.ExecuteReader();
+			while(conn.leer.Read())
+			{
+				cmbGrupo.Items.Add(conn.leer["Nombre"].ToString());
+			}
+			conn.conexion.Close();
+			
+			//cmbGrupo.SelectedIndex=0;
+		}
+		
+		void CmbGrupoSelectedIndexChanged(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void CmbMetricaSelectedIndexChanged(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void LblAgregaGrupoEnter(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void LblAgregaGrupoMouseEnter(object sender, EventArgs e)
+		{
+			lblAgregaGrupo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+		}
+		
+		void LblAgregaGrupoMouseLeave(object sender, EventArgs e)
+		{
+			lblAgregaGrupo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+		}
+		
+		void LblAgregaGrupoMouseClick(object sender, MouseEventArgs e)
+		{
+			this.Close();
+			princ.abreAgrupacion();
+		}
 	}
 }

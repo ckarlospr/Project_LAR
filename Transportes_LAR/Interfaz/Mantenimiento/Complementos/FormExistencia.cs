@@ -48,7 +48,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			while(conn.leer.Read())
 			{			
 				nombreProductos[contador] = conn.leer["PIEZA"].ToString();
-				cantidadProductos[contador] = Convert.ToInt32(conn.leer["CANTIDAD"]);
+				cantidadProductos[contador] = Convert.ToInt32(conn.leer["EXISTENCIA"]);
 				++contador;
 			}
 			conn.conexion.Close();
@@ -103,7 +103,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 		{
 			LlenadoCmbSinConsultas();
 			LlenadoCmbGrupo();
-			AdaptadorGrafica("SELECT * FROM PRODUCTO  WHERE ESTADO = 'Activado' ORDER BY CANTIDAD  DESC");
+			AdaptadorGrafica("SELECT * FROM PRODUCTO_ALMACEN  WHERE ESTATUS = 'Activado' ORDER BY PIEZA  DESC");
 	
 			
 			chart1.ChartAreas[0].Area3DStyle.Enable3D = false;

@@ -166,7 +166,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 								carr = dataOrdenCompra.Rows[x].Cells[4].Value.ToString();
 								preu = dataOrdenCompra.Rows[x].Cells[5].Value.ToString();
 								subt = dataOrdenCompra.Rows[x].Cells[6].Value.ToString();
-								sqlmant.InsertarListaCompra(Convert.ToInt32(sqlmant.IDOrdenCompra()), movi, cant, Convert.ToInt32(sqlmant.RetornaIdProducto("PIEZA", ObtenPrimerString(prod))), Convert.ToInt32(sqlmant.IDVehiculo(ObtenPrimerString(carr))), preu, subt);
+								sqlmant.InsertarListaCompra(Convert.ToInt32(sqlmant.IDOrdenCompra()), movi, cant, Convert.ToInt32(sqlmant.RetornaIdProducto("CODIGO", ObtenPrimerString(prod))), Convert.ToInt32(sqlmant.IDVehiculo(ObtenPrimerString(carr))), preu, subt);
 							}
 							LabelsObligaVisible(false);
 							LimpiarCampos();
@@ -903,7 +903,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 					
 					if(cant != "")
 					{
-						if(prod != "" && sqlmant.RetornaIdProducto("PIEZA", ObtenPrimerString(prod)) != "")
+						if(prod != "" && sqlmant.RetornaIdProducto("CODIGO", ObtenPrimerString(prod)) != "")
 						{
 							if(carr != "" && sqlmant.IDVehiculo(ObtenPrimerString(carr)) != "")
 							{

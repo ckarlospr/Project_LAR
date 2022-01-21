@@ -38,17 +38,6 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 		{
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.dataEntrada = new System.Windows.Forms.DataGridView();
-			this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.no = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.art = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.model = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.origen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.flujo = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.label7 = new System.Windows.Forms.Label();
 			this.txtFolioOrdenC = new System.Windows.Forms.TextBox();
 			this.dgOCompra = new System.Windows.Forms.DataGridView();
@@ -60,6 +49,17 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			this.cmdValidar = new System.Windows.Forms.Button();
 			this.dtpEntrada = new System.Windows.Forms.DateTimePicker();
 			this.txtCantidad = new System.Windows.Forms.TextBox();
+			this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.no = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.art = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.model = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.origen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.flujo = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dataEntrada)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgOCompra)).BeginInit();
 			this.SuspendLayout();
@@ -103,85 +103,6 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			this.dataEntrada.TabIndex = 5;
 			this.dataEntrada.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataEntradaCellClick);
 			this.dataEntrada.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.DataEntradaEditingControlShowing);
-			// 
-			// dataGridViewTextBoxColumn41
-			// 
-			this.dataGridViewTextBoxColumn41.DataPropertyName = "Empresa";
-			this.dataGridViewTextBoxColumn41.HeaderText = "ID_Entrada";
-			this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
-			this.dataGridViewTextBoxColumn41.ReadOnly = true;
-			this.dataGridViewTextBoxColumn41.Visible = false;
-			this.dataGridViewTextBoxColumn41.Width = 67;
-			// 
-			// no
-			// 
-			this.no.HeaderText = "ID_Lista";
-			this.no.Name = "no";
-			this.no.ReadOnly = true;
-			this.no.Width = 71;
-			// 
-			// art
-			// 
-			this.art.HeaderText = "Articulo";
-			this.art.Name = "art";
-			this.art.ReadOnly = true;
-			this.art.Width = 67;
-			// 
-			// marca
-			// 
-			this.marca.HeaderText = "Marca";
-			this.marca.Name = "marca";
-			this.marca.ReadOnly = true;
-			this.marca.Width = 62;
-			// 
-			// model
-			// 
-			this.model.HeaderText = "Modelo";
-			this.model.Name = "model";
-			this.model.ReadOnly = true;
-			this.model.Width = 67;
-			// 
-			// cantidad
-			// 
-			this.cantidad.HeaderText = "Cantidad";
-			this.cantidad.Name = "cantidad";
-			this.cantidad.ReadOnly = true;
-			this.cantidad.Width = 74;
-			// 
-			// codigo
-			// 
-			this.codigo.HeaderText = "Codigo";
-			this.codigo.Name = "codigo";
-			this.codigo.ReadOnly = true;
-			this.codigo.Width = 65;
-			// 
-			// proveedor
-			// 
-			this.proveedor.HeaderText = "Proveedor";
-			this.proveedor.Name = "proveedor";
-			this.proveedor.ReadOnly = true;
-			this.proveedor.Width = 81;
-			// 
-			// origen
-			// 
-			this.origen.HeaderText = "Origen";
-			this.origen.Name = "origen";
-			this.origen.ReadOnly = true;
-			this.origen.Width = 63;
-			// 
-			// fecha
-			// 
-			this.fecha.HeaderText = "Fecha Ingreso";
-			this.fecha.Name = "fecha";
-			this.fecha.ReadOnly = true;
-			this.fecha.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-			// 
-			// flujo
-			// 
-			this.flujo.HeaderText = "flujo";
-			this.flujo.Name = "flujo";
-			this.flujo.ReadOnly = true;
-			this.flujo.Width = 51;
 			// 
 			// label7
 			// 
@@ -264,8 +185,9 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			// 
 			// cmdAgregar
 			// 
+			this.cmdAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.cmdAgregar.Enabled = false;
-			this.cmdAgregar.Location = new System.Drawing.Point(902, 430);
+			this.cmdAgregar.Location = new System.Drawing.Point(902, 463);
 			this.cmdAgregar.Name = "cmdAgregar";
 			this.cmdAgregar.Size = new System.Drawing.Size(92, 41);
 			this.cmdAgregar.TabIndex = 249;
@@ -275,8 +197,9 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			// 
 			// cmdValidar
 			// 
+			this.cmdValidar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.cmdValidar.Enabled = false;
-			this.cmdValidar.Location = new System.Drawing.Point(902, 522);
+			this.cmdValidar.Location = new System.Drawing.Point(902, 555);
 			this.cmdValidar.Name = "cmdValidar";
 			this.cmdValidar.Size = new System.Drawing.Size(92, 47);
 			this.cmdValidar.TabIndex = 250;
@@ -286,22 +209,105 @@ namespace Transportes_LAR.Interfaz.Mantenimiento.Complementos
 			// 
 			// dtpEntrada
 			// 
+			this.dtpEntrada.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.dtpEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.dtpEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.dtpEntrada.Location = new System.Drawing.Point(902, 348);
+			this.dtpEntrada.Location = new System.Drawing.Point(902, 381);
 			this.dtpEntrada.Name = "dtpEntrada";
 			this.dtpEntrada.Size = new System.Drawing.Size(92, 20);
 			this.dtpEntrada.TabIndex = 251;
 			// 
 			// txtCantidad
 			// 
+			this.txtCantidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
 			this.txtCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtCantidad.Location = new System.Drawing.Point(902, 390);
+			this.txtCantidad.Location = new System.Drawing.Point(902, 423);
 			this.txtCantidad.Name = "txtCantidad";
 			this.txtCantidad.Size = new System.Drawing.Size(92, 20);
 			this.txtCantidad.TabIndex = 252;
 			this.txtCantidad.Text = "0";
 			this.txtCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// dataGridViewTextBoxColumn41
+			// 
+			this.dataGridViewTextBoxColumn41.DataPropertyName = "Empresa";
+			this.dataGridViewTextBoxColumn41.HeaderText = "ID_Entrada";
+			this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
+			this.dataGridViewTextBoxColumn41.ReadOnly = true;
+			this.dataGridViewTextBoxColumn41.Visible = false;
+			this.dataGridViewTextBoxColumn41.Width = 67;
+			// 
+			// no
+			// 
+			this.no.HeaderText = "ID_Lista";
+			this.no.Name = "no";
+			this.no.ReadOnly = true;
+			this.no.Visible = false;
+			this.no.Width = 52;
+			// 
+			// art
+			// 
+			this.art.HeaderText = "Articulo";
+			this.art.Name = "art";
+			this.art.ReadOnly = true;
+			this.art.Width = 67;
+			// 
+			// marca
+			// 
+			this.marca.HeaderText = "Marca";
+			this.marca.Name = "marca";
+			this.marca.ReadOnly = true;
+			this.marca.Width = 62;
+			// 
+			// model
+			// 
+			this.model.HeaderText = "Modelo";
+			this.model.Name = "model";
+			this.model.ReadOnly = true;
+			this.model.Width = 67;
+			// 
+			// cantidad
+			// 
+			this.cantidad.HeaderText = "Cantidad";
+			this.cantidad.Name = "cantidad";
+			this.cantidad.ReadOnly = true;
+			this.cantidad.Width = 74;
+			// 
+			// codigo
+			// 
+			this.codigo.HeaderText = "Codigo";
+			this.codigo.Name = "codigo";
+			this.codigo.ReadOnly = true;
+			this.codigo.Width = 65;
+			// 
+			// proveedor
+			// 
+			this.proveedor.HeaderText = "Proveedor";
+			this.proveedor.Name = "proveedor";
+			this.proveedor.ReadOnly = true;
+			this.proveedor.Width = 81;
+			// 
+			// origen
+			// 
+			this.origen.HeaderText = "Origen";
+			this.origen.Name = "origen";
+			this.origen.ReadOnly = true;
+			this.origen.Width = 63;
+			// 
+			// fecha
+			// 
+			this.fecha.HeaderText = "Fecha Ingreso";
+			this.fecha.Name = "fecha";
+			this.fecha.ReadOnly = true;
+			this.fecha.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+			// 
+			// flujo
+			// 
+			this.flujo.HeaderText = "flujo";
+			this.flujo.Name = "flujo";
+			this.flujo.ReadOnly = true;
+			this.flujo.Visible = false;
+			this.flujo.Width = 51;
 			// 
 			// FormEntrada
 			// 

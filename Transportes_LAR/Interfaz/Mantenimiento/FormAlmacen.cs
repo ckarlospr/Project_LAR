@@ -96,7 +96,7 @@ namespace Transportes_LAR.Interfaz.Mantenimiento
 			}
 			else if(opcion==5)
 			{
-            	Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormProducto Entrada = new Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormProducto();
+            	Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormProducto Entrada = new Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormProducto(this);
 				Entrada.TopLevel = false;
 				this.pPrincipal.Tag = Entrada;
 				this.pPrincipal.Controls.Add(Entrada);
@@ -112,11 +112,12 @@ namespace Transportes_LAR.Interfaz.Mantenimiento
 			}
 			else if(opcion==7)
 			{
-				Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormAgrupación Entrada = new Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormAgrupación();
-				Entrada.TopLevel = false;
-				this.pPrincipal.Tag = Entrada;
-				this.pPrincipal.Controls.Add(Entrada);
-				Entrada.Show();
+//				Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormAgrupación Entrada = new Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormAgrupación();
+//				Entrada.TopLevel = false;
+//				this.pPrincipal.Tag = Entrada;
+//				this.pPrincipal.Controls.Add(Entrada);
+//				Entrada.Show();
+				abreAgrupacion();
 			}
 			else if(opcion==8)
 			{
@@ -134,5 +135,18 @@ namespace Transportes_LAR.Interfaz.Mantenimiento
 			getCambiarOpcion(Convert.ToInt16(e.ItemIndex.ToString()));
 		}
 		#endregion	
+		
+		void LtMenuSelectedIndexChanged(object sender, EventArgs e)
+		{
+			
+		}
+		
+		public void abreAgrupacion(){
+			Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormAgrupación Entrada = new Transportes_LAR.Interfaz.Mantenimiento.Complementos.FormAgrupación();
+			Entrada.TopLevel = false;
+			this.pPrincipal.Tag = Entrada;
+			this.pPrincipal.Controls.Add(Entrada);
+			Entrada.Show();
+		}
 	}
 }
